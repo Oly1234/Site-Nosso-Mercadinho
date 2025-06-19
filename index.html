@@ -121,6 +121,7 @@
         .indicadores-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto; }
         .indicadores .count { font-size: 40px; color: #f7931e; }
         .midia { background-color: #111; padding: 60px 20px; }
+        .midia h2 { color: #f7931e; text-align: center; }
         .midia .subtitle { text-align: center; margin-bottom: 30px; }
         .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
         .galeria img { width: 100%; border-radius: 10px; }
@@ -275,11 +276,11 @@
                 <div class="count" data-target="900">0</div>
                 <p>produtos no cardápio</p>
             </div>
-            <div class="stat" data-aos="fade-left" data-aos-delay="400">
+            <div class="stat" data-aos="fade-left" data-aos-delay="300">
                 <div class="count" data-target="100">0</div>
                 <p>de aceitação entre moradores</p>
             </div>
-            <div class="stat" data-aos="fade-left" data-aos-delay="500">
+            <div class="stat" data-aos="fade-left" data-aos-delay="400">
                  <div class="count" data-target="90">0</div>
                 <p>% de inibição de furtos</p>
             </div>
@@ -504,6 +505,11 @@
     </div>
 </section>
 
+<section id="grafico" class="grafico-crescimento">
+    <h2 style="font-size:26px; color:#222;">Crescimento da rede</h2>
+    <canvas id="crescimentoChart"></canvas>
+</section>
+
 <footer data-aos="fade-up">
     <div class="container">
         <div class="copyright">
@@ -517,7 +523,37 @@
         <button class="close-btn" onclick="fecharModal('modalCondominio')" aria-label="Fechar formulário">×</button>
         <h3>Quero no Meu Condomínio</h3>
         <form id="formCondominio">
-             </form>
+            <input name="nome" placeholder="Seu Nome Completo *" required type="text"/>
+            <select name="feitoPor" required>
+                <option value="">Você é... *</option><option value="Sindico">Síndico</option><option value="Administrador">Administrador</option><option value="Presidente">Presidente</option><option value="Morador">Morador</option><option value="Outro">Outro</option>
+            </select>
+            <input name="residencias" placeholder="Quantas residências? *" required type="number"/>
+            <input name="condominio" placeholder="Nome do Condomínio" type="text"/>
+            <input name="email" placeholder="Seu E-mail para Retorno (opcional)" type="text"/>
+            <p style="font-size: 0.9rem; color: var(--laranja); margin-top: 0.5em;">Atendemos somente Piracicaba no momento.</p>
+            <button class="btn" type="submit">Enviar Interesse</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal" id="modalFranqueado">
+    <div class="modal-content">
+        <button class="close-btn" onclick="fecharModal('modalFranqueado')" aria-label="Fechar formulário">×</button>
+        <h3>Interesse em Franquia</h3>
+        <form id="formFranqueado">
+            <input type="hidden" id="planoInteresse" name="planoInteresse" value="">
+            <input name="nome" placeholder="Seu Nome Completo *" required type="text"/>
+            <input name="profissao" placeholder="Sua Profissão / Ramo de Atuação *" required type="text"/>
+            <select name="experiencia" required>
+                <option value="">Tem experiência no ramo? *</option>
+                <option value="SimMercados">Sim, no ramo de mercados</option>
+                <option value="SimGestao">Sim, em gestão</option>
+                <option value="NaoMasInteresse">Não, mas tenho interesse</option>
+            </select>
+            <textarea name="motivo" placeholder="Por que deseja abrir uma franquia? *" required rows="4"></textarea>
+            <input name="email" placeholder="Seu E-mail para Retorno (opcional)" type="text"/>
+            <button class="btn" type="submit">Enviar Interesse</button>
+        </form>
     </div>
 </div>
 
@@ -537,7 +573,7 @@
                     <li><i class="fas fa-check"></i>Acesso ao sistema de gestão</li>
                 </ul>
                 <div class="plan-price">A partir de R$ 25.000</div>
-                <a href="https://wa.me/5519996600929?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20Plano%20Microfranquia%20Express." target="_blank" class="btn btn-cta btn-invest">Quero Fazer Esse Investimento</a>
+                <button class="btn btn-cta btn-invest" onclick="selecionarPlano('Plano Microfranquia Express')">Quero Fazer Esse Investimento</button>
             </div>
         </details>
 
@@ -551,7 +587,7 @@
                     <li><i class="fas fa-check"></i>Suporte de marketing regional</li>
                 </ul>
                 <div class="plan-price">A partir de R$ 45.000</div>
-                <a href="https://wa.me/5519996600929?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20Plano%20Franquia%20Padrão." target="_blank" class="btn btn-cta btn-invest">Quero Fazer Esse Investimento</a>
+                <button class="btn btn-cta btn-invest" onclick="selecionarPlano('Plano Franquia Padrão')">Quero Fazer Esse Investimento</button>
             </div>
         </details>
 
@@ -565,12 +601,11 @@
                     <li><i class="fas fa-check"></i>Condições especiais para expansão</li>
                 </ul>
                 <div class="plan-price">A partir de R$ 70.000</div>
-                <a href="https://wa.me/5519996600929?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20Plano%20Franquia%20Master." target="_blank" class="btn btn-cta btn-invest">Quero Fazer Esse Investimento</a>
+                <button class="btn btn-cta btn-invest" onclick="selecionarPlano('Plano Franquia Master')">Quero Fazer Esse Investimento</button>
             </div>
         </details>
     </div>
 </div>
-
 
 <a class="whatsapp-float" href="https://wa.me/5519996600929" target="_blank" aria-label="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp"></i>
@@ -592,6 +627,19 @@
     function fecharModal(id) {
         document.getElementById(id).style.display = 'none';
         document.body.style.overflow = 'auto';
+    }
+
+    // Função para selecionar plano e abrir formulário de franqueado
+    function selecionarPlano(nomePlano) {
+        // Preenche o campo oculto no formulário de franqueado
+        const planoInput = document.getElementById('planoInteresse');
+        if(planoInput) {
+            planoInput.value = nomePlano;
+        }
+        
+        // Fecha o modal de valores e abre o de franqueado
+        fecharModal('modalValores');
+        abrirModal('modalFranqueado');
     }
 
     // Menu mobile
@@ -622,12 +670,60 @@
         // Formulário Condomínio
         document.getElementById('formCondominio')?.addEventListener('submit', function (e) {
             e.preventDefault();
-            // Lógica de envio WhatsApp
+            const dados = new FormData(this);
+            let mensagem = `Olá! Tenho interesse em instalar o NOSSO MERCADINHO OLYPRESS no meu condomínio.%0A%0A`;
+            mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+            mensagem += `*Função:* ${encodeURIComponent(dados.get('feitoPor'))}%0A`;
+            mensagem += `*Condomínio:* ${encodeURIComponent(dados.get('condominio')) || 'Não informado'}%0A`;
+            mensagem += `*Residências:* ${encodeURIComponent(dados.get('residencias'))}%0A`;
+            if (dados.get('email')) {
+                mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
+            }
+            mensagem += `%0APor favor, envie mais detalhes.`;
+            window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
+            fecharModal('modalCondominio');
+            alert('Seu interesse foi registrado! Você será redirecionado para o WhatsApp para concluir.');
         });
+
+        // Formulário Franqueado com plano de interesse
+        document.getElementById('formFranqueado')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const dados = new FormData(this);
+            let mensagem = `Olá! Tenho interesse em me tornar franqueado do NOSSO MERCADINHO OLYPRESS.%0A%0A`;
+            
+            // Adiciona o plano de interesse se ele existir
+            if(dados.get('planoInteresse')) {
+                mensagem += `*Plano de Interesse:* ${encodeURIComponent(dados.get('planoInteresse'))}%0A`;
+            }
+
+            mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+            mensagem += `*Profissão/Ramo:* ${encodeURIComponent(dados.get('profissao'))}%0A`;
+            mensagem += `*Experiência:* ${encodeURIComponent(dados.get('experiencia'))}%0A`;
+            mensagem += `*Motivo:* ${encodeURIComponent(dados.get('motivo'))}%0A`;
+            if (dados.get('email')) {
+                mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
+            }
+            mensagem += `%0AGostaria de mais informações, por favor.`;
+            window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
+            fecharModal('modalFranqueado');
+            alert('Seu interesse foi registrado! Você será redirecionado para o WhatsApp para concluir.');
+        });
+        
         // Formulário Contato
         document.getElementById('formContato')?.addEventListener('submit', function (e) {
             e.preventDefault();
-            // Lógica de envio WhatsApp
+            const dados = new FormData(this);
+            let mensagem = `Nova mensagem do site NOSSO MERCADINHO OLYPRESS:%0A%0A`;
+            mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+            mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
+            if (dados.get('telefone')) {
+                mensagem += `*Telefone:* ${encodeURIComponent(dados.get('telefone'))}%0A`;
+            }
+            mensagem += `*Assunto:* ${encodeURIComponent(dados.get('assunto'))}%0A`;
+            mensagem += `*Mensagem:* ${encodeURIComponent(dados.get('mensagem'))}%0A`;
+            window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
+            alert('Sua mensagem será enviada pelo WhatsApp. Por favor, conclua o envio no aplicativo.');
+            this.reset();
         });
 
         const counters = document.querySelectorAll('.count');
@@ -662,7 +758,7 @@
     }));
 
     // Chart.js
-    const ctx = document.getElementById('grafico-crescimento')?.getContext('2d');
+    const ctx = document.getElementById('crescimentoChart')?.getContext('2d');
     if (ctx) {
         new Chart(ctx, {
             type: 'line', data: { labels: ['2023', '2024', '2025 (previsão)'], datasets: [{ label: 'Unidades em operação', data: [5, 18, 52], borderColor: '#f7931e', backgroundColor: 'rgba(247, 147, 30, 0.2)', tension: 0.3, fill: true }] },
