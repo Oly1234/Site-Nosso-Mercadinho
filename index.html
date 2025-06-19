@@ -17,6 +17,84 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "NOSSO MERCADINHO OLYPRESS",
+      "image": "https://nossomercadinhoolypress.com.br/logo.png",
+      "@id": "https://nossomercadinhoolypress.com.br/",
+      "url": "https://nossomercadinhoolypress.com.br/",
+      "telephone": "+5519983569940",
+      "description": "Mercado 100% autônomo para condomínios em Piracicaba. Funcionamento 24h, instalação gratuita e mix de produtos personalizado.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Piracicaba",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.instagram.com/olypressnossomercadinho",
+        "https://www.facebook.com/olypressnossomercadinho",
+        "https://www.linkedin.com/company/olypress"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Como funciona o mercadinho no condomínio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instalamos um ponto autônomo, acessível 24h por dia, com tecnologia 'pegue e pague' para a conveniência dos moradores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tem custo para o condomínio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. O modelo é implantado sem custos de instalação ou manutenção para o residencial. Toda a operação é nossa responsabilidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como é feita a segurança?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contamos com câmeras internas de alta resolução e um sistema antifraude robusto para garantir a segurança e a integridade do mercadinho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto custa para ser franqueado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Temos modelos de franquia acessíveis e escaláveis. Entre em contato para conhecer as opções de investimento e retorno."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         /* ===========================
            Variáveis de Cores
@@ -402,6 +480,83 @@
         }
 
         /* ===========================
+           Seção Indicadores (Refatorado)
+           =========================== */
+        .indicadores {
+            background: #111;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .indicadores h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        .indicadores-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .indicadores .stat {
+            flex: 1 1 220px;
+        }
+        .indicadores .count {
+            font-size: 40px;
+            color: #f7931e;
+        }
+        .indicadores-footer {
+            margin-top: 40px;
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        /* ===========================
+           Seção Mídia (Refatorado)
+           =========================== */
+        .midia {
+            background-color: #111;
+            padding: 60px 20px;
+        }
+        .midia h2 {
+            color: #f7931e;
+            text-align: center;
+        }
+        .midia .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .midia .video-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .midia .video-player {
+            width: 100%;
+            max-width: 720px;
+            display: block;
+            margin: 20px auto;
+        }
+        .midia .full-width-image {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* ===========================
            Seção Destaque (Como Funciona)
            =========================== */
         .destaque {
@@ -478,7 +633,7 @@
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(247, 147, 30, 0.3);
             height: 600px;
-            position: relative; /* Para o efeito de "loading" */
+            position: relative;
         }
 
         .simulador-embed iframe {
@@ -486,13 +641,6 @@
             height: 100%;
             border: none;
             transition: opacity 0.5s ease-in-out;
-        }
-
-        
-
-        @keyframes pulse {
-            from { opacity: 0.7; }
-            to { opacity: 1; }
         }
 
         /* ===========================
@@ -513,7 +661,7 @@
             display: flex;
             align-items: flex-start;
             gap: 15px;
-            background-color: var(--cinza-medio); /* Fundo sutil para cada item */
+            background-color: var(--cinza-medio);
             padding: 20px;
             border-radius: 8px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -526,12 +674,12 @@
 
         .beneficio-item i {
             color: var(--laranja);
-            font-size: 1.8rem; /* Ícones maiores */
+            font-size: 1.8rem;
             margin-top: 3px;
         }
 
         .beneficio-item h4 {
-            color: var(--branco); /* Títulos brancos para contraste */
+            color: var(--branco);
             margin-bottom: 5px;
         }
 
@@ -539,7 +687,7 @@
            Seção Franquias
            =========================== */
         .franquias {
-            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('cresc.png') center/cover no-repeat fixed; /* Adicionado fixed para parallax */
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('cresc.png') center/cover no-repeat fixed;
             text-align: center;
             color: var(--branco);
             padding: 100px 20px;
@@ -557,8 +705,8 @@
             font-size: 1.1rem;
         }
 
-        .franquias .card { /* Estilo específico para cards na seção de franquias */
-            background-color: rgba(255, 255, 255, 0.08); /* Fundo translúcido */
+        .franquias .card {
+            background-color: rgba(255, 255, 255, 0.08);
             border: 1px solid var(--laranja-claro);
             color: var(--branco);
         }
@@ -572,7 +720,7 @@
            =========================== */
         .depoimentos {
             background-color: var(--cinza-escuro);
-            padding-bottom: 100px; /* Espaço para as setas do slick */
+            padding-bottom: 100px;
         }
 
         .depoimentos h2, .depoimentos p {
@@ -588,7 +736,7 @@
             padding: 30px;
             border-radius: 10px;
             border-left: 4px solid var(--laranja);
-            margin: 0 10px; /* Espaçamento entre os slides */
+            margin: 0 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
@@ -675,7 +823,7 @@
         }
 
         .social-link {
-            width: 45px; /* Ícones maiores */
+            width: 45px;
             height: 45px;
             border-radius: 50%;
             background-color: var(--cinza-escuro);
@@ -683,30 +831,30 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s;
-            font-size: 1.2rem; /* Tamanho do ícone */
+            font-size: 1.2rem;
         }
 
         .social-link:hover {
             background-color: var(--laranja);
             color: var(--preto);
-            transform: translateY(-5px) scale(1.1); /* Animação no hover */
+            transform: translateY(-5px) scale(1.1);
             box-shadow: 0 0 15px var(--laranja);
         }
 
         .form-container {
             background-color: var(--cinza-escuro);
-            padding: 40px; /* Mais padding */
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
         }
 
         .form-group {
-            margin-bottom: 25px; /* Mais espaço entre grupos */
+            margin-bottom: 25px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 10px; /* Mais espaço abaixo do label */
+            margin-bottom: 10px;
             font-weight: 600;
             color: var(--branco);
         }
@@ -715,8 +863,8 @@
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 14px 18px; /* Mais padding */
-            border-radius: 8px; /* Cantos mais arredondados */
+            padding: 14px 18px;
+            border-radius: 8px;
             border: 1px solid var(--cinza-medio);
             background-color: var(--preto);
             color: var(--branco);
@@ -734,8 +882,83 @@
         }
 
         .form-group textarea {
-            min-height: 150px; /* Altura mínima maior */
+            min-height: 150px;
             resize: vertical;
+        }
+        
+        /* ===========================
+           Seção FAQ (Refatorado)
+           =========================== */
+        .faq {
+            background-color: var(--cinza-claro); 
+            padding: 60px 20px;
+        }
+        .faq h2 {
+            text-align: center;
+            width: 100%;
+            color: var(--preto);
+        }
+        .faq-grid {
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 40px; 
+            justify-content: center; 
+            max-width: 1000px; 
+            margin: 40px auto;
+        }
+        .faq-column {
+            flex: 1 1 45%; 
+            min-width: 300px;
+        }
+        .faq-item {
+            margin-bottom: 15px; 
+            background-color: var(--branco); 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            transition: all 0.3s ease;
+        }
+        .faq-item summary {
+            font-weight: bold; 
+            color: var(--laranja); 
+            cursor: pointer; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .faq-item summary i {
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        .faq-item[open] summary i {
+            transform: rotate(180deg);
+        }
+        .faq-item p {
+            color: var(--cinza-medio); 
+            font-size: 15px; 
+            padding-top: 15px; 
+            border-top: 1px solid #eee; 
+            margin-top: 15px;
+        }
+
+        /* ===========================
+           Seção Gráfico (Refatorado)
+           =========================== */
+        .grafico-crescimento {
+            background:#fff;
+            padding:60px 20px;
+            text-align:center;
+        }
+        .grafico-crescimento h2 {
+            font-size:26px; 
+            color:#222;
+        }
+        #crescimentoChart {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            display: block;
+            padding: 10px;
         }
 
         /* ===========================
@@ -774,7 +997,7 @@
 
         .footer-links a:hover {
             color: var(--laranja);
-            transform: translateX(5px); /* Novo: leve deslocamento no hover */
+            transform: translateX(5px);
         }
 
         .copyright {
@@ -798,18 +1021,18 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            backdrop-filter: blur(5px); /* Novo: efeito de blur */
+            backdrop-filter: blur(5px);
         }
 
         .modal-content {
             background: var(--cinza-claro);
             width: 100%;
-            max-width: 550px; /* Maior largura */
+            max-width: 550px;
             border-radius: 12px;
-            padding: 40px; /* Mais padding */
+            padding: 40px;
             position: relative;
             color: var(--preto);
-            animation: modalFadeIn 0.4s ease-out; /* Mais suave */
+            animation: modalFadeIn 0.4s ease-out;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
@@ -830,7 +1053,7 @@
             right: 20px;
             background: transparent;
             border: none;
-            font-size: 1.8rem; /* Ícone maior */
+            font-size: 1.8rem;
             cursor: pointer;
             color: var(--preto);
             transition: transform 0.2s ease;
@@ -842,7 +1065,7 @@
 
         .modal-content h3 {
             color: var(--laranja);
-            margin-bottom: 1.2em; /* Mais espaço */
+            margin-bottom: 1.2em;
             font-size: 2rem;
             text-align: center;
         }
@@ -851,26 +1074,29 @@
         .modal-content form select,
         .modal-content form textarea {
             width: 100%;
-            padding: 16px; /* Mais padding */
-            margin: 15px 0; /* Mais espaço */
+            padding: 16px;
+            margin: 15px 0;
             border: 1px solid #ccc;
             border-radius: 8px;
-            font-size: 1.1rem; /* Fonte maior */
+            font-size: 1.1rem;
             color: var(--preto);
             background-color: #fff;
             box-sizing: border-box;
         }
 
         .modal-content form button {
-            margin-top: 2em; /* Mais espaço */
+            margin-top: 2em;
             width: 100%;
-            padding: 18px; /* Mais padding */
+            padding: 18px;
             font-size: 1.1rem;
         }
 
         /* ===========================
-           Animações
+           Animações e Utilitários
            =========================== */
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
         @keyframes float {
             0%, 100% {
                 transform: translateY(0);
@@ -880,14 +1106,9 @@
             }
         }
 
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-
         .fade-in {
             animation: fadeIn 1s ease-in;
         }
-
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -898,7 +1119,7 @@
                 transform: translateY(0);
             }
         }
-
+        
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -916,7 +1137,7 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
-            animation: pulse-whatsapp 2s infinite; /* Novo: Animação de pulsação */
+            animation: pulse-whatsapp 2s infinite;
         }
 
         .whatsapp-float:hover {
@@ -937,6 +1158,22 @@
             }
         }
 
+        #preloader {
+            background-color: #111;
+            color: #f7931e;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
 
         /* ===========================
            Responsividade
@@ -985,7 +1222,7 @@
 
             .mobile-menu {
                 position: fixed;
-                top: 80px;
+                top: 80px; /* Ajuste para a altura da nav */
                 left: 0;
                 width: 100%;
                 background-color: var(--cinza-escuro);
@@ -1045,36 +1282,13 @@
     </style>
 </head>
 <body>
-<style>
-    #preloader {
-        background-color: #111;
-        color: #f7931e;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: sans-serif;
-        font-size: 1.4rem;
-        letter-spacing: 1px;
-    }
-</style>
+
 <div id="preloader">NOSSO MERCADINHO OLYPRESS</div>
-<script>
-    window.addEventListener('load', function () {
-        const loader = document.getElementById('preloader');
-        loader.style.transition = 'opacity 0.8s';
-        loader.style.opacity = 0;
-        setTimeout(() => loader.style.display = 'none', 800);
-    });
-</script>
+
 <header>
-    <img alt="Logo Nosso Mercadinho Olypress" src="logo.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
+    <img alt="Logo Nosso Mercadinho Olypress com fundo transparente" src="logo.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
 </header>
+
 <nav>
     <div class="nav-container container">
         <a class="logo" href="#" style="margin: 0 auto;"></a>
@@ -1085,7 +1299,7 @@
             <a href="#franquia">Franquias</a>
             <a href="#contato">Contato</a>
         </div>
-        <button class="mobile-menu-btn">
+        <button class="mobile-menu-btn" aria-label="Abrir menu de navegação">
             <i class="fas fa-bars"></i>
         </button>
     </div>
@@ -1097,6 +1311,7 @@
         <a href="#contato">Contato</a>
     </div>
 </nav>
+
 <header class="hero">
     <div class="hero-content container">
         <h1>Conveniência 24h no Seu Condomínio</h1>
@@ -1107,11 +1322,13 @@
         </div>
     </div>
 </header>
+
 <div class="banner-led container" data-aos="fade-up" data-aos-delay="200">
     <p>
         ABERTO 24 HORAS 7 DIAS POR SEMANA — REPOSIÇÕES CONSTANTES — MAIS DE 800 PRODUTOS — NOSSO MERCADINHO OLYPRESS — SEJA FRANQUEADO — TENHA NO SEU CONDOMÍNIO —
     </p>
 </div>
+
 <section class="sobre" data-aos="fade-up" data-aos-duration="1000" id="sobre">
     <div class="container">
         <h2>Sobre o NOSSO MERCADINHO OLYPRESS</h2>
@@ -1135,80 +1352,57 @@
         </div>
     </div>
 </section>
-<section data-aos="fade-up" data-aos-duration="1000" id="indicadores" style="background:#111; color:white; padding:60px 20px; text-align:center;">
-    <h2 style="font-size:28px; margin-bottom:40px;">Nossa presença em números</h2>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; max-width:1000px; margin:auto;">
-        <div class="stat" style="flex:1 1 220px;" data-aos="fade-right" data-aos-delay="100">
-            <div class="count" data-target="4" style="font-size:40px; color:#f7931e;">0</div>
+
+<section class="indicadores" data-aos="fade-up" data-aos-duration="1000" id="indicadores">
+    <h2>Nossa presença em números</h2>
+    <div class="indicadores-grid">
+        <div class="stat" data-aos="fade-right" data-aos-delay="100">
+            <div class="count" data-target="4">0</div>
             <p>anos no mercado</p>
         </div>
-        <div class="stat" style="flex:1 1 220px;" data-aos="fade-right" data-aos-delay="200">
-            <div class="count" data-target="900" style="font-size:40px; color:#f7931e;">0</div>
+        <div class="stat" data-aos="fade-right" data-aos-delay="200">
+            <div class="count" data-target="900">0</div>
             <p>produtos no cardápio</p>
         </div>
-        <div class="stat" style="flex:1 1 220px;" data-aos="fade-right" data-aos-delay="300">
-            <div class="count" data-target="30" style="font-size:40px; color:#f7931e;">0</div>
+        <div class="stat" data-aos="fade-right" data-aos-delay="300">
+            <div class="count" data-target="30">0</div>
             <p>fornecedores homologados</p>
         </div>
-        <div class="stat" style="flex:1 1 220px;" data-aos="fade-left" data-aos-delay="400">
-            <div class="count" data-target="100" style="font-size:40px; color:#f7931e;">0</div>
+        <div class="stat" data-aos="fade-left" data-aos-delay="400">
+            <div class="count" data-target="100">0</div>
             <p>de aceitação entre moradores</p>
         </div>
-        <div class="stat" style="flex:1 1 220px;" data-aos="fade-left" data-aos-delay="500">
-            <div class="count" data-target="15" style="font-size:40px; color:#f7931e;">0</div>
+        <div class="stat" data-aos="fade-left" data-aos-delay="500">
+            <div class="count" data-target="15">0</div>
             <p>meses de retorno estimado</p>
         </div>
     </div>
-    <div style="margin-top:40px; font-size:16px; color:#ccc;" data-aos="fade-up" data-aos-delay="600">
+    <div class="indicadores-footer" data-aos="fade-up" data-aos-delay="600">
         1ª franquia autônoma de Piracicaba • Condições especiais de lançamento
     </div>
 </section>
-<script>
-    const counters = document.querySelectorAll('.count');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const update = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const current = +counter.innerText.replace(/\D/g, '') || 0;
-                    const inc = target / 50;
-                    if (current < target) {
-                        counter.innerText = Math.ceil(current + inc);
-                        setTimeout(update, 40);
-                    } else {
-                        counter.innerText = target + (target === 100 ? '%' : '');
-                    }
-                };
-                update();
-                observer.unobserve(counter);
-            }
-        });
-    }, {threshold: 0.5});
 
-    counters.forEach(counter => observer.observe(counter));
-</script>
-
-<section class="midia" data-aos="fade-up" data-aos-duration="1000" style="background-color:#111; padding:60px 20px;">
+<section class="midia" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
-        <h2 style="color:#f7931e; text-align:center;">Veja por Dentro</h2>
-        <p style="text-align:center; margin-bottom:30px;">Ambiente real do NOSSO MERCADINHO OLYPRESS</p>
-        <div class="galeria" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
-            <a href="foto1.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="100"><img src="foto1.jpeg" style="width:100%; border-radius:10px;"/></a>
-            <a href="foto2.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="200"><img src="foto2.jpeg" style="width:100%; border-radius:10px;"/></a>
-            <a href="foto3.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="300"><img src="foto3.jpeg" style="width:100%; border-radius:10px;"/></a>
-            <a href="foto4.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="400"><img src="foto4.jpeg" style="width:100%; border-radius:10px;"/></a>
-            <a href="foto5.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="500"><img src="foto5.jpeg" style="width:100%; border-radius:10px;"/></a>
+        <h2>Veja por Dentro</h2>
+        <p class="subtitle">Ambiente real do NOSSO MERCADINHO OLYPRESS</p>
+        <div class="galeria">
+            <a href="foto1.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="100"><img src="foto1.jpeg" alt="Prateleiras com variedade de salgadinhos, biscoitos e snacks."/></a>
+            <a href="foto2.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="200"><img src="foto2.jpeg" alt="Visão ampla do mercadinho com geladeiras de bebidas e freezer de congelados."/></a>
+            <a href="foto3.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="300"><img src="foto3.jpeg" alt="Corredor do mercadinho mostrando a organização dos produtos de limpeza e higiene."/></a>
+            <a href="foto4.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="400"><img src="foto4.jpeg" alt="Geladeira de laticínios com iogurtes, queijos e outros produtos frescos."/></a>
+            <a href="foto5.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="500"><img src="foto5.jpeg" alt="Caixa de autoatendimento onde o cliente escaneia e paga pelos produtos."/></a>
         </div>
-        <div style="margin-top:40px; text-align:center;">
-            <video controls="" style="width: 100%; max-width: 720px; display: block; margin: 20px auto;" data-aos="fade-up">
+        <div class="video-container">
+            <video class="video-player" controls poster="caminho/para/poster-do-video.jpg" data-aos="fade-up">
                 <source src="WhatsApp Video 2025-06-04 at 14.00.07.mp4" type="video/mp4"/>
                 Seu navegador não suporta o vídeo.
             </video>
-            <img alt="Nosso Mercadinho Olypress por dentro" src="WhatsApp Image 2025-03-10 at 14.18.13 (2).jpeg" style="width: 100%; max-width: 900px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" data-aos="fade-up" data-aos-delay="200"/>
+            <img class="full-width-image" alt="Visão panorâmica do Nosso Mercadinho Olypress, mostrando a diversidade de produtos." src="WhatsApp Image 2025-03-10 at 14.18.13 (2).jpeg" data-aos="fade-up" data-aos-delay="200"/>
         </div>
     </div>
 </section>
+
 <section class="destaque" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="destaque-content">
@@ -1225,19 +1419,23 @@
                 <a class="btn" href="#condominio" data-aos="zoom-in" data-aos-delay="600">Saiba mais</a>
             </div>
             <div class="destaque-image float-animation" data-aos="zoom-in" data-aos-delay="200">
-                </div>
+                <img src="foto2.jpeg" alt="Demonstração do ambiente do mercadinho autônomo.">
+            </div>
         </div>
     </div>
 </section>
+
 <section class="simulador" data-aos="fade-up" data-aos-duration="1000" id="simulador">
     <div class="container">
         <h2>Experimente Nosso Simulador</h2>
         <p>Veja como é fácil e intuitivo fazer compras no NOSSO MERCADINHO OLYPRESS:</p>
-        <div class="simulador-embed" style="background:#111; display:flex; align-items:center; justify-content:center;" data-aos="zoom-in" data-aos-delay="200">
-            <div id="loader-text" style="position:absolute;color:#f7931e;font-size:1.5rem;">Carregando simulador...</div><iframe style="opacity:0;" loading="lazy" src="https://nossomercadinhoolypress.github.io/Game-Nosso-Mercadinho-/" onload="this.style.opacity=1;" title="Simulador de Compras NOSSO MERCADINHO OLYPRESS"></iframe><script>document.querySelector("iframe").addEventListener("load",()=>{document.getElementById("loader-text")?.remove();});</script>
+        <div class="simulador-embed" data-aos="zoom-in" data-aos-delay="200">
+            <div id="loader-text" style="position:absolute;color:#f7931e;font-size:1.5rem;">Carregando simulador...</div>
+            <iframe style="opacity:0;" loading="lazy" src="https://nossomercadinhoolypress.github.io/Game-Nosso-Mercadinho-/" onload="this.style.opacity=1; document.getElementById('loader-text')?.remove();" title="Simulador de Compras NOSSO MERCADINHO OLYPRESS"></iframe>
         </div>
     </div>
 </section>
+
 <section class="condominios" data-aos="fade-up" data-aos-duration="1000" id="condominio">
     <div class="container">
         <h2>Para Condomínios</h2>
@@ -1277,6 +1475,7 @@
         </div>
     </div>
 </section>
+
 <section class="franquias" data-aos="fade-up" data-aos-duration="1000" id="franquia">
     <div class="container">
         <h2>Seja um Franqueado</h2>
@@ -1303,6 +1502,7 @@
         </div>
     </div>
 </section>
+
 <section class="depoimentos" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <h2>O que dizem sobre nós</h2>
@@ -1313,7 +1513,7 @@
                     "Desde que instalaram o mercadinho no nosso condomínio, a vida dos moradores ficou muito mais prática. Os produtos são de qualidade e o atendimento é excelente."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Maria Silva" src="https://randomuser.me/api/portraits/women/45.jpg"/>
+                    <img alt="Foto da cliente Maria Silva" src="https://via.placeholder.com/50/f7931e/000000?Text=MS"/>
                     <div class="autor-info">
                         <h4>Maria Silva</h4>
                         <p>Síndica - Condomínio Solar das Flores</p>
@@ -1325,7 +1525,7 @@
                     "Como morador, adoro a praticidade de poder comprar itens básicos a qualquer hora. O sistema é muito intuitivo e nunca tive problemas."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Carlos Mendes" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+                    <img alt="Foto do cliente Carlos Mendes" src="https://via.placeholder.com/50/f7931e/000000?Text=CM"/>
                     <div class="autor-info">
                         <h4>Carlos Mendes</h4>
                         <p>Morador - Residencial Green Valley</p>
@@ -1337,7 +1537,7 @@
                     "Ser franqueado da NOSSO MERCADINHO OLYPRESS foi a melhor decisão que tomei. O suporte da franqueadora é excelente e o negócio tem um retorno muito bom."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Ana Paula" src="https://randomuser.me/api/portraits/women/68.jpg"/>
+                    <img alt="Foto da franqueada Ana Paula" src="https://via.placeholder.com/50/f7931e/000000?Text=AP"/>
                     <div class="autor-info">
                         <h4>Ana Paula</h4>
                         <p>Franqueada - Zona Norte</p>
@@ -1349,7 +1549,7 @@
                     "A praticidade de ter tudo no térreo mudou nossa rotina."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Denise" src="https://randomuser.me/api/portraits/women/12.jpg"/>
+                    <img alt="Foto da moradora Denise" src="https://via.placeholder.com/50/f7931e/000000?Text=D"/>
                     <div class="autor-info">
                         <h4>Denise</h4>
                         <p>Moradora</p>
@@ -1361,7 +1561,7 @@
                     "Tivemos aumento na valorização do imóvel após a instalação."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Gestão" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                    <img alt="Avatar da Gestão do Condomínio Esmeralda" src="https://via.placeholder.com/50/f7931e/000000?Text=GE"/>
                     <div class="autor-info">
                         <h4>Gestão</h4>
                         <p>Cond. Esmeralda</p>
@@ -1371,6 +1571,7 @@
         </div>
     </div>
 </section>
+
 <section class="contato" data-aos="fade-up" data-aos-duration="1000" id="contato">
     <div class="container">
         <h2>Entre em Contato</h2>
@@ -1406,13 +1607,13 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a class="social-link" href="https://www.instagram.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                    <a class="social-link" href="https://www.instagram.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="200" aria-label="Visite nosso Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="social-link" href="https://www.facebook.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="300">
+                    <a class="social-link" href="https://www.facebook.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="300" aria-label="Visite nosso Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="social-link" href="https://www.linkedin.com/company/olypress" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+                    <a class="social-link" href="https://www.linkedin.com/company/olypress" target="_blank" data-aos="zoom-in" data-aos-delay="400" aria-label="Visite nosso LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -1451,99 +1652,102 @@
         </div>
     </div>
 </section>
-<section data-aos="fade-up" data-aos-duration="1000" id="faq" style="background-color: var(--cinza-claro); padding: 60px 20px;">
-    <h2 style="text-align: center; width: 100%; color: var(--preto);">Perguntas Frequentes</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1000px; margin: 40px auto;">
-        <div style="flex: 1 1 45%; min-width: 300px;">
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="100">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Como funciona o mercadinho no condomínio? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+
+<section class="faq" data-aos="fade-up" data-aos-duration="1000" id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-grid">
+        <div class="faq-column">
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <summary>
+                    Como funciona o mercadinho no condomínio? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Instalamos um ponto autônomo, acessível 24h por dia, com tecnologia "pegue e pague" para a conveniência dos moradores.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="200">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Tem custo para o condomínio? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <summary>
+                    Tem custo para o condomínio? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Não. O modelo é implantado sem custos de instalação ou manutenção para o residencial. Toda a operação é nossa responsabilidade.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="300">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Como é feita a segurança? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <summary>
+                    Como é feita a segurança? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Contamos com câmeras internas de alta resolução e um sistema antifraude robusto para garantir a segurança e a integridade do mercadinho.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="400">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Quem cuida da reposição dos produtos? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <summary>
+                    Quem cuida da reposição dos produtos? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Nossa equipe realiza visitas regulares para garantir o reabastecimento constante e a organização do espaço, baseada na demanda e preferência dos moradores.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="500">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Pode ser instalado em qualquer espaço? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <summary>
+                    Pode ser instalado em qualquer espaço? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Sim! Adaptamos o modelo ao ambiente disponível no seu condomínio, otimizando o espaço para a melhor experiência.
                 </p>
             </details>
         </div>
-        <div style="flex: 1 1 45%; min-width: 300px;">
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="100">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Quanto custa para ser franqueado? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+        <div class="faq-column">
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                <summary>
+                    Quanto custa para ser franqueado? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Temos modelos de franquia acessíveis e escaláveis. Entre em contato para conhecer as opções de investimento e retorno.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="200">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Preciso contratar equipe? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <summary>
+                    Preciso contratar equipe? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Não. A operação do mercadinho é 100% autônoma, minimizando seus custos operacionais.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="300">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Como recebo o suporte? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <summary>
+                    Como recebo o suporte? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Oferecemos acompanhamento técnico e estratégico completo, desde a implantação até a gestão diária, garantindo seu sucesso.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="400">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    Onde posso abrir minha franquia? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <summary>
+                    Onde posso abrir minha franquia? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Nossas franquias são ideais para condomínios residenciais e comerciais, empresas e outros locais com grande fluxo de pessoas.
                 </p>
             </details>
-            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="500">
-                <summary style="font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
-                    O retorno é rápido? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+            <details class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <summary>
+                    O retorno é rápido? <i class="fas fa-chevron-down"></i>
                 </summary>
-                <p style="color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                <p>
                     Com uma boa gestão e o suporte da franqueadora, o payback pode ser surpreendentemente rápido, proporcionando um excelente retorno sobre o investimento.
                 </p>
             </details>
         </div>
     </div>
 </section>
-<section id="grafico" style="background:#fff; padding:60px 20px; text-align:center;">
-    <h2 style="font-size:26px; color:#222;">Crescimento da rede</h2>
-    <canvas id="crescimentoChart" style="max-width: 100%; height: auto; margin: auto; display: block; padding: 10px;"></canvas>
+
+<section class="grafico-crescimento" id="grafico">
+    <h2>Crescimento da rede</h2>
+    <canvas id="crescimentoChart"></canvas>
 </section>
+
 <footer>
     <div class="container">
         <div class="footer-content">
@@ -1575,9 +1779,10 @@
         </div>
     </div>
 </footer>
+
 <div class="modal" id="modalCondominio">
     <div class="modal-content">
-        <button class="close-btn" onclick="fecharModal('modalCondominio')">×</button>
+        <button class="close-btn" onclick="fecharModal('modalCondominio')" aria-label="Fechar formulário">×</button>
         <h3>Quero no Meu Condomínio</h3>
         <form id="formCondominio">
             <input name="nome" placeholder="Seu Nome Completo *" required="" type="text"/>
@@ -1599,9 +1804,10 @@
         </form>
     </div>
 </div>
+
 <div class="modal" id="modalFranqueado">
     <div class="modal-content">
-        <button class="close-btn" onclick="fecharModal('modalFranqueado')">×</button>
+        <button class="close-btn" onclick="fecharModal('modalFranqueado')" aria-label="Fechar formulário">×</button>
         <h3>Seja Franqueado</h3>
         <form id="formFranqueado">
             <input name="nome" placeholder="Seu Nome Completo *" required="" type="text"/>
@@ -1618,18 +1824,53 @@
         </form>
     </div>
 </div>
-<a class="whatsapp-float" href="https://wa.me/5519996600929" target="_blank">
+
+<a class="whatsapp-float" href="https://wa.me/5519996600929" target="_blank" aria-label="Fale conosco no WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+    // Preloader
+    window.addEventListener('load', function () {
+        const loader = document.getElementById('preloader');
+        loader.style.transition = 'opacity 0.8s';
+        loader.style.opacity = 0;
+        setTimeout(() => loader.style.display = 'none', 800);
+    });
+
+    // Contador Animado
+    const counters = document.querySelectorAll('.count');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const update = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText.replace(/\D/g, '') || 0;
+                    const inc = target / 50;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + inc);
+                        setTimeout(update, 40);
+                    } else {
+                        counter.innerText = target + (target === 100 ? '%' : '');
+                    }
+                };
+                update();
+                observer.unobserve(counter);
+            }
+        });
+    }, {threshold: 0.5});
+    counters.forEach(counter => observer.observe(counter));
+
+
     // Inicializar AOS
     AOS.init({
         duration: 1200,
-        once: true, // Animações acontecem apenas uma vez ao rolar
+        once: true,
     });
 
     // Funções para abrir e fechar modais
@@ -1646,12 +1887,13 @@
     // Menu mobile
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
+    const navHeight = document.querySelector('nav').offsetHeight;
+    mobileMenu.style.top = navHeight + 'px'; // Ajuste dinâmico da posição do menu
 
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
     });
 
-    // Fechar menu ao clicar em um link
     document.querySelectorAll('.mobile-menu a').forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
@@ -1661,8 +1903,7 @@
     // Fechar modal ao clicar fora
     window.addEventListener('click', function (e) {
         if (e.target.classList.contains('modal')) {
-            e.target.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            fecharModal(e.target.id);
         }
     });
 
@@ -1670,7 +1911,6 @@
     document.getElementById('formCondominio').addEventListener('submit', function (e) {
         e.preventDefault();
         const dados = new FormData(this);
-
         let mensagem = `Olá! Tenho interesse em instalar o NOSSO MERCADINHO OLYPRESS no meu condomínio.%0A%0A`;
         mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
         mensagem += `*Função:* ${encodeURIComponent(dados.get('feitoPor'))}%0A`;
@@ -1680,18 +1920,15 @@
             mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
         }
         mensagem += `%0APor favor, envie mais detalhes.`;
-
         window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
         fecharModal('modalCondominio');
-
-        alert('Seu interesse foi registrado! Entraremos em contato em breve.');
+        alert('Seu interesse foi registrado! Você será redirecionado para o WhatsApp para concluir.');
     });
 
     // Formulário Franqueado
     document.getElementById('formFranqueado').addEventListener('submit', function (e) {
         e.preventDefault();
         const dados = new FormData(this);
-
         let mensagem = `Olá! Tenho interesse em me tornar franqueado do NOSSO MERCADINHO OLYPRESS.%0A%0A`;
         mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
         mensagem += `*Profissão/Ramo:* ${encodeURIComponent(dados.get('profissao'))}%0A`;
@@ -1701,18 +1938,15 @@
             mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
         }
         mensagem += `%0AGostaria de mais informações, por favor.`;
-
         window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
         fecharModal('modalFranqueado');
-
-        alert('Seu interesse foi registrado! Entraremos em contato em breve.');
+        alert('Seu interesse foi registrado! Você será redirecionado para o WhatsApp para concluir.');
     });
 
     // Formulário de Contato
     document.getElementById('formContato').addEventListener('submit', function (e) {
         e.preventDefault();
         const dados = new FormData(this);
-
         let mensagem = `Nova mensagem do site NOSSO MERCADINHO OLYPRESS:%0A%0A`;
         mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
         mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
@@ -1721,14 +1955,12 @@
         }
         mensagem += `*Assunto:* ${encodeURIComponent(dados.get('assunto'))}%0A`;
         mensagem += `*Mensagem:* ${encodeURIComponent(dados.get('mensagem'))}%0A`;
-
         window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
-
-        alert('Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.');
+        alert('Sua mensagem será enviada pelo WhatsApp. Por favor, conclua o envio no aplicativo.');
         this.reset();
     });
 
-    // Inicialização do Slick Carousel
+    // Inicialização do Slick Carousel e FAQ
     $(document).ready(function () {
         $('.slick-carousel').slick({
             infinite: true,
@@ -1754,20 +1986,6 @@
                     }
                 }
             ]
-        });
-
-        // Animação para o ícone do FAQ
-        document.querySelectorAll('.faq-item summary').forEach(summary => {
-            summary.addEventListener('click', () => {
-                const icon = summary.querySelector('i');
-                if (summary.parentElement.open) {
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                } else {
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                }
-            });
         });
     });
 
@@ -1809,7 +2027,7 @@
                 y: {beginAtZero: true, ticks: {precision: 0}},
                 x: {
                     grid: {
-                        display: false // Remove as linhas de grade do eixo X
+                        display: false
                     }
                 }
             }
