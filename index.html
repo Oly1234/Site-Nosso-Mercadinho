@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>NOSSO MERCADINHO OLYPRESS • Franquia de Mercado Autônomo 24h</title>
-    <meta content="Invista em uma franquia de mercado autônomo 24h em Piracicaba. Modelo de negócio lucrativo com gestão flexível, suporte real e sistema próprio." name="description"/>
+    <title>NOSSO MERCADINHO OLYPRESS • Mercado Autônomo 24h para Condomínios</title>
+    <meta content="O primeiro mercado 100% autônomo para condomínios de Piracicaba. Funcionamento 24h, instalação gratuita e mix de produtos personalizado."
+name="description"/>
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
     <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -17,754 +18,2202 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "NOSSO MERCADINHO OLYPRESS",
-      "image": "https://nossomercadinhoolypress.com.br/logo.png",
-      "@id": "https://nossomercadinhoolypress.com.br/",
-      "url": "https://nossomercadinhoolypress.com.br/",
-      "telephone": "+5519996600929",
-      "description": "Franquia de mercado 100% autônomo para condomínios em Piracicaba. Funcionamento 24h, gestão flexível e mix de produtos personalizado.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Piracicaba",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
-      },
-      "foundingDate": "2023",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "https://www.instagram.com/olypressnossomercadinho",
-        "https://www.facebook.com/olypressnossomercadinho",
-        "https://www.linkedin.com/company/olypress"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Como funciona o mercadinho no condomínio?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Instalamos um ponto autônomo, acessível 24h por dia, com tecnologia 'pegue e pague' para a conveniência dos moradores." }
-        },
-        {
-          "@type": "Question",
-          "name": "Tem custo para o condomínio?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Não. O modelo é implantado sem custos de instalação ou manutenção para o residencial. Toda a operação é nossa responsabilidade." }
-        },
-        {
-          "@type": "Question",
-          "name": "Como é feita a segurança?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Contamos com câmeras de alta resolução, um sistema antifraude robusto e um exclusivo sistema de atendimento humano por voz dentro da unidade, que inibe mais de 90% das tentativas de furto e melhora a experiência do cliente." }
-        },
-        {
-          "@type": "Question",
-          "name": "Quanto custa para ser franqueado?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Temos modelos de franquia acessíveis e escaláveis, com diferentes faixas de investimento. Clique em 'Consulte Nossos Modelos de Franquia' para ver os detalhes de cada plano." }
-        }
-      ]
-    }
-    </script>
-
     <style>
+        /* ===========================
+           Variáveis de 
+Cores
+           =========================== */
         :root {
-            --laranja: #f7931e; --laranja-escuro: #e07c10; --laranja-claro: #ffae42;
-            --preto: #000000; --cinza-escuro: #1a1a1a; --cinza-medio: #333; --cinza-claro: #f5f5f5;
-            --branco: #ffffff; --vermelho: #e74c3c; --verde: #2ecc71; --azul: #3498db;
+            --laranja: #f7931e;
+--laranja-escuro: #e07c10;
+            --laranja-claro: #ffae42;
+            --preto: #000000;
+            --cinza-escuro: #1a1a1a;
+            --cinza-medio: #333;
+            --cinza-claro: #f5f5f5;
+            --branco: #ffffff;
+            --vermelho: #e74c3c;
+            --verde: #2ecc71;
+            --azul: #3498db;
+}
+
+        /* ===========================
+           Reset e Tipografia
+           =========================== */
+        *, *::before, *::after {
+            margin: 0;
+padding: 0;
+            box-sizing: border-box;
         }
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--preto); color: var(--branco); line-height: 1.6; letter-spacing: 0.5px; overflow-x: hidden; }
-        a { text-decoration: none; color: inherit; }
-        img, svg { max-width: 100%; height: auto; display: block; }
-        h1, h2, h3, h4, h5, h6 { color: var(--laranja); font-weight: 700; margin-bottom: 0.5em; line-height: 1.2; }
-        h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } h3 { font-size: 1.5rem; }
-        p { margin-bottom: 1em; font-size: 1rem; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        section { padding: 80px 0; position: relative; }
-        .btn { display: inline-block; background-color: var(--laranja); color: var(--preto); font-weight: 600; text-align: center; padding: 16px 32px; border-radius: 8px; border: 2px solid var(--preto); font-size: 1rem; transition: all 0.3s ease; cursor: pointer; margin: 1em 0; position: relative; overflow: hidden; }
-        .btn:hover { background-color: var(--laranja-escuro); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(247, 147, 30, 0.4); }
-        .btn-cta { font-size: 1.2rem; padding: 18px 36px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        .hero { background: linear-gradient(135deg, var(--laranja), var(--laranja-claro)); text-align: center; padding: 100px 20px; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('intern.jpeg') center/cover no-repeat; opacity: 0.15; animation: panBackground 30s linear infinite alternate; }
-        @keyframes panBackground { 0% { background-position: 0% 0%; } 100% { background-position: 100% 100%; } }
-        .hero-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
-        .hero h1 { font-size: 2.8rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); color: var(--preto); }
-        .hero p { font-size: 1.3rem; margin-bottom: 30px; font-weight: 500; color: var(--preto); }
-        .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-        nav { position: sticky; top: 0; background-color: var(--cinza-escuro); z-index: 1000; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
-        .nav-links { display: flex; gap: 30px; }
-        .nav-links a { color: var(--branco); font-weight: 600; transition: color 0.3s; position: relative; }
-        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background-color: var(--laranja); transition: width 0.3s; }
-        .nav-links a:hover, .nav-links a:hover::after { color: var(--laranja); width: 100%; }
-        .mobile-menu-btn { display: none; background: none; border: none; color: var(--branco); font-size: 1.5rem; cursor: pointer; }
-        .banner-led { width: 100%; overflow: hidden; background-color: var(--cinza-escuro); border-radius: 8px; margin: 0 auto; position: relative; height: 60px; display: flex; align-items: center; border-left: 5px solid var(--laranja); border-right: 5px solid var(--laranja); box-shadow: 0 0 15px var(--laranja-claro); }
-        .banner-led p { position: absolute; white-space: nowrap; font-size: 1.2rem; font-weight: 600; color: var(--laranja); animation: scrollText 30s linear infinite; left: 100%; padding: 0 20px; }
-        @keyframes scrollText { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
-        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        .card { background-color: var(--cinza-escuro); padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); transition: all 0.3s ease; text-align: center; border-top: 4px solid var(--laranja); }
-        .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 25px var(--laranja); }
-        .card i { font-size: 3rem; margin-bottom: 20px; color: var(--laranja); transition: transform 0.3s ease; }
-        .card:hover i { transform: scale(1.1) rotate(5deg); }
-        .indicadores { background: #111; text-align: center; }
-        .indicadores-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto; }
-        .indicadores .count { font-size: 40px; color: #f7931e; }
-        .midia { background-color: #111; padding: 60px 20px; }
-        .midia h2 { color: #f7931e; text-align: center; }
-        .midia .subtitle { text-align: center; margin-bottom: 30px; }
-        .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
-        .galeria img { width: 100%; border-radius: 10px; }
-        .midia .video-container { margin-top: 40px; text-align: center; }
-        .midia .video-player { width: 100%; max-width: 720px; display: block; margin: 20px auto; border-radius: 10px; }
-        .midia .full-width-image { width: 100%; max-width: 900px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .destaque { background-color: var(--cinza-escuro); position: relative; overflow: hidden; }
-        .destaque::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('all.jpeg') center/cover no-repeat; opacity: 0.1; }
-        .destaque-content { display: flex; align-items: center; gap: 50px; position: relative; z-index: 2; }
-        .destaque-text ul { list-style: none; padding: 0; margin-top: 20px; }
-        .destaque-text li { margin-bottom: 10px; font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
-        .destaque-text li i { color: var(--verde); font-size: 1.3rem; }
-        .destaque-image { flex: 1; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); transition: transform 0.3s; }
-        .destaque-image:hover { transform: scale(1.02); }
-        .simulador { text-align: center; }
-        .simulador-embed { margin-top: 40px; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(247, 147, 30, 0.3); height: 600px; position: relative; }
-        .simulador-embed iframe { width: 100%; height: 100%; border: none; transition: opacity 0.5s ease-in-out; }
-        .condominios { background-color: var(--cinza-escuro); }
-        .beneficios-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 40px 0; }
-        .beneficio-item { display: flex; align-items: flex-start; gap: 15px; background-color: var(--cinza-medio); padding: 20px; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .beneficio-item:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); }
-        .beneficio-item i { color: var(--laranja); font-size: 1.8rem; margin-top: 3px; }
-        .beneficio-item h4 { color: var(--branco); margin-bottom: 5px; }
-        .franquias { background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('cresc.png') center/cover no-repeat fixed; text-align: center; color: var(--branco); }
-        .depoimentos { background-color: var(--cinza-escuro); padding-bottom: 100px; }
-        .depoimentos-container.slick-slider { margin-top: 40px; }
-        .depoimento { background-color: var(--preto); padding: 30px; border-radius: 10px; border-left: 4px solid var(--laranja); margin: 0 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); }
-        .depoimento-autor { display: flex; align-items: center; gap: 15px; }
-        .depoimento-autor .avatar-svg { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--laranja); }
-        .autor-info h4 { margin-bottom: 5px; color: var(--branco); } .autor-info p { color: var(--laranja); font-size: 0.9rem; }
-        .slick-prev:before, .slick-next:before { color: var(--laranja) !important; font-size: 30px !important; }
-        .slick-dots li button:before { color: var(--laranja-claro) !important; font-size: 12px !important; }
-        .slick-dots li.slick-active button:before { color: var(--laranja) !important; }
-        .contato-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
-        .form-container { background-color: var(--cinza-escuro); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); }
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--laranja); box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.3); outline: none; }
-        .faq { background-color: var(--cinza-claro); padding: 60px 20px; }
-        .faq h2 { text-align: center; color: var(--preto); }
-        .faq-grid { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1000px; margin: 40px auto; }
-        .faq-column { flex: 1 1 45%; min-width: 300px; }
-        .faq-item { margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .faq-item summary { font-weight: bold; color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-item summary i { transition: transform 0.3s ease; }
-        .faq-item[open] summary i { transform: rotate(180deg); }
-        .faq-item p { color: var(--cinza-medio); font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px; }
-        .grafico-crescimento { background:#fff; padding:60px 20px; text-align:center; }
-        #crescimentoChart { max-width: 100%; height: auto; margin: auto; display: block; padding: 10px; }
-        .investidor { background-color: var(--cinza-escuro); text-align: center; }
-        .investidor h2 { font-size: 2.5rem; color: var(--branco); }
-        .investidor p { max-width: 800px; margin-left: auto; margin-right: auto; font-size: 1.1rem; }
-        .modal .plan-details { margin-bottom: 20px; background-color: var(--branco); color: var(--preto); border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease; }
-        .modal .plan-details summary { font-weight: bold; font-size: 1.3rem; color: var(--laranja); cursor: pointer; padding: 20px; display: flex; justify-content: space-between; align-items: center; list-style: none; }
-        .modal .plan-details summary::-webkit-details-marker { display: none; }
-        .modal .plan-details summary i { transition: transform 0.3s ease; }
-        .modal .plan-details[open] summary i { transform: rotate(180deg); }
-        .modal .plan-content { padding: 0 20px 20px 20px; border-top: 1px solid #eee; }
-        .modal .plan-content ul { list-style-type: none; padding-left: 0; }
-        .modal .plan-content li { margin-bottom: 10px; display: flex; align-items: center; }
-        .modal .plan-content li i { color: var(--verde); margin-right: 8px; }
-        .modal .plan-price { font-size: 1.8rem; font-weight: 700; color: var(--preto); margin: 20px 0; }
-        .modal .btn-invest { width: 100%; margin-top: 10px; }
-        footer { background-color: var(--cinza-escuro); color: #ccc; padding: 50px 0 20px; text-align: center; }
-        .copyright { padding-top: 20px; border-top: 1px solid var(--cinza-medio); font-size: 0.9rem; }
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 10000; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(5px); }
-        .modal-content { background: var(--cinza-claro); width: 100%; max-width: 650px; border-radius: 12px; padding: 40px; position: relative; color: var(--preto); animation: modalFadeIn 0.4s ease-out; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
-        @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-50px) scale(0.9); } to { opacity: 1; transform: translateY(0) scale(1); } }
-        .close-btn { position: absolute; top: 20px; right: 20px; background: transparent; border: none; font-size: 1.8rem; cursor: pointer; color: var(--preto); transition: transform 0.2s ease; }
-        .close-btn:hover { transform: rotate(90deg); }
-        .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: var(--verde); color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; z-index: 1000; display: flex; align-items: center; justify-content: center; animation: pulse-whatsapp 2s infinite; }
-        .whatsapp-float:hover { transform: scale(1.1) rotate(5deg); animation: none; }
-        @keyframes pulse-whatsapp { 0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(46, 204, 113, 0); } 100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); } }
+
+        html {
+            scroll-behavior: smooth;
+font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+background-color: var(--preto);
+            color: var(--branco);
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+            overflow-x: hidden;
+}
+
+        a {
+            text-decoration: none;
+color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+height: auto;
+            display: block;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--laranja);
+font-weight: 700;
+            margin-bottom: 0.5em;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+}
+
+        h2 {
+            font-size: 2rem;
+}
+
+        h3 {
+            font-size: 1.5rem;
+}
+
+        p {
+            margin-bottom: 1em;
+font-size: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1em;
+padding-left: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+}
+
+        /* ===========================
+           Layout Principal
+           =========================== */
+        .container {
+            max-width: 1200px;
+margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+position: relative;
+        }
+
+        /* ===========================
+           Botões
+           =========================== */
+        .btn {
+            display: inline-block;
+background-color: var(--laranja);
+            color: var(--preto);
+            font-weight: 600;
+            text-align: center;
+            padding: 16px 32px;
+            border-radius: 8px;
+            border: 2px solid var(--preto);
+            font-size: 1rem;
+transition: all 0.3s ease;
+            cursor: pointer;
+            margin: 1em 0;
+            position: relative;
+            overflow: hidden;
+}
+
+        .btn:hover {
+            background-color: var(--laranja-escuro);
+transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(247, 147, 30, 0.4);
+}
+
+        .btn:active {
+            transform: translateY(0);
+}
+
+        .btn-outline {
+            background-color: transparent;
+color: var(--laranja);
+            border: 2px solid var(--laranja);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--laranja);
+color: var(--preto);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--verde);
+color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #25c25a;
+}
+
+        .btn-cta {
+            font-size: 1.2rem;
+padding: 18px 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ===========================
+           Cabeçalho Hero
+           =========================== */
+        .hero {
+            background: linear-gradient(135deg, var(--laranja), var(--laranja-claro));
+text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('intern.jpeg') center/cover no-repeat;
+            opacity: 0.15;
+animation: panBackground 30s linear infinite alternate; /* Novo: Animação de fundo */
+        }
+
+        @keyframes panBackground {
+            0% {
+                background-position: 0% 0%;
+}
+            100% {
+                background-position: 100% 100%;
+}
+        }
+
+        .hero-content {
+            position: relative;
+z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: var(--preto);
+/* Alterado para preto */
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+margin-bottom: 30px;
+            font-weight: 500;
+            color: var(--preto); /* Alterado para preto */
+        }
+
+        .hero-buttons {
+            display: flex;
+gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===========================
+           Navegação
+           =========================== */
+        nav {
+            position: sticky;
+top: 0;
+            background-color: var(--cinza-escuro);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+        .nav-container {
+            display: flex;
+justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+font-weight: 800;
+            color: var(--laranja);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+}
+
+        .logo img {
+            height: 40px;
+}
+
+        .nav-links {
+            display: flex;
+gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--branco);
+font-weight: 600;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--laranja);
+            transition: width 0.3s;
+}
+
+        .nav-links a:hover {
+            color: var(--laranja);
+}
+
+        .nav-links a:hover::after {
+            width: 100%;
+}
+
+        .mobile-menu-btn {
+            display: none;
+background: none;
+            border: none;
+            color: var(--branco);
+            font-size: 1.5rem;
+            cursor: pointer;
+}
+
+        /* ===========================
+           Banner LED
+           =========================== */
+        .banner-led {
+            width: 100%;
+overflow: hidden;
+            background-color: var(--cinza-escuro);
+            border-radius: 8px;
+            margin: 0 auto;
+            position: relative;
+            height: 60px;
+            display: flex;
+            align-items: center;
+border-left: 5px solid var(--laranja);
+            border-right: 5px solid var(--laranja);
+            box-shadow: 0 0 15px var(--laranja-claro);
+/* Novo: efeito de luz */
+        }
+
+        .banner-led p {
+            position: absolute;
+white-space: nowrap;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--laranja);
+            animation: scrollText 30s linear infinite;
+            left: 100%;
+            padding: 0 20px;
+}
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+}
+            100% {
+                transform: translateX(-100%);
+}
+        }
+
+        /* ===========================
+           Cards de Benefícios
+           =========================== */
+        .cards {
+            display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: var(--cinza-escuro);
+padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            text-align: center;
+border-top: 4px solid var(--laranja);
+            position: relative; /* Adicionado para o efeito de "brilho" */
+            overflow: hidden;
+}
+
+        .card::before { /* Novo: Efeito de brilho */
+            content: '';
+position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+transition: all 0.7s;
+        }
+
+        .card:hover::before {
+            left: 100%;
+}
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+/* Escala adicionada no hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 25px var(--laranja);
+/* Brilho no hover */
+        }
+
+        .card i {
+            font-size: 3rem;
+margin-bottom: 20px;
+            color: var(--laranja);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover i {
+            transform: scale(1.1) rotate(5deg);
+/* Animação do ícone no hover */
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+margin-bottom: 15px;
+        }
+
+        /* ===========================
+           Seção Destaque (Como Funciona)
+           =========================== */
+        .destaque {
+            background-color: var(--cinza-escuro);
+position: relative;
+            overflow: hidden;
+        }
+
+        .destaque::before {
+            content: '';
+position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('all.jpeg') center/cover no-repeat;
+            opacity: 0.1;
+}
+
+        .destaque-content {
+            display: flex;
+align-items: center;
+            gap: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .destaque-text {
+            flex: 1;
+}
+
+        .destaque-text ul {
+            list-style: none;
+padding: 0;
+            margin-top: 20px;
+        }
+
+        .destaque-text li {
+            margin-bottom: 10px;
+font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .destaque-text li i {
+            color: var(--verde);
+font-size: 1.3rem;
+        }
+
+        .destaque-image {
+            flex: 1;
+border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+}
+
+        .destaque-image:hover {
+            transform: scale(1.02);
+}
+
+        /* ===========================
+           Seção Simulador
+           =========================== */
+        .simulador {
+            background-color: var(--preto);
+text-align: center;
+        }
+
+        .simulador-embed {
+            margin-top: 40px;
+border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(247, 147, 30, 0.3);
+            height: 600px;
+            position: relative;
+/* Para o efeito de "loading" */
+        }
+
+        .simulador-embed iframe {
+            width: 100%;
+height: 100%;
+            border: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        
+
+        @keyframes pulse {
+            from { opacity: 0.7;
+}
+            to { opacity: 1;
+}
+        }
+
+        /* ===========================
+           Seção Condomínios
+           =========================== */
+        .condominios {
+            background-color: var(--cinza-escuro);
+}
+
+        .beneficios-list {
+            display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .beneficio-item {
+            display: flex;
+align-items: flex-start;
+            gap: 15px;
+            background-color: var(--cinza-medio); /* Fundo sutil para cada item */
+            padding: 20px;
+border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .beneficio-item:hover {
+            transform: translateY(-5px);
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .beneficio-item i {
+            color: var(--laranja);
+font-size: 1.8rem; /* Ícones maiores */
+            margin-top: 3px;
+}
+
+        .beneficio-item h4 {
+            color: var(--branco);
+/* Títulos brancos para contraste */
+            margin-bottom: 5px;
+}
+
+        /* ===========================
+           Seção Franquias
+           =========================== */
+        .franquias {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('cresc.png') center/cover no-repeat fixed;
+/* Adicionado fixed para parallax */
+            text-align: center;
+color: var(--branco);
+            padding: 100px 20px;
+        }
+
+        .franquias h2 {
+            color: var(--branco);
+font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .franquias p {
+            max-width: 800px;
+margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+
+        /* ===========================
+           Seção Depoimentos (Slick Carousel)
+           =========================== */
+        .depoimentos {
+            background-color: var(--cinza-escuro);
+padding-bottom: 100px; /* Espaço para as setas do slick */
+        }
+
+        .depoimentos h2, .depoimentos p {
+            text-align: center;
+}
+
+        .depoimentos-container.slick-slider {
+            margin-top: 40px;
+}
+
+        .depoimento {
+            background-color: var(--preto);
+padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--laranja);
+            margin: 0 10px;
+/* Espaçamento entre os slides */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+        .depoimento-texto {
+            font-style: italic;
+margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .depoimento-autor {
+            display: flex;
+align-items: center;
+            gap: 15px;
+        }
+
+        .depoimento-autor img {
+            width: 50px;
+height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--laranja);
+}
+
+        .autor-info h4 {
+            margin-bottom: 5px;
+color: var(--branco);
+        }
+
+        .autor-info p {
+            color: var(--laranja);
+font-size: 0.9rem;
+        }
+
+        /* Estilos do Slick Carousel */
+        .slick-prev:before, .slick-next:before {
+            color: var(--laranja) !important;
+font-size: 30px !important;
+        }
+        .slick-dots li button:before {
+            color: var(--laranja-claro) !important;
+font-size: 12px !important;
+        }
+        .slick-dots li.slick-active button:before {
+            color: var(--laranja) !important;
+}
+
+        /* ===========================
+           Seção Contato
+           =========================== */
+        .contato {
+            background-color: var(--preto);
+}
+
+        .contato-container {
+            display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contato-info {
+            display: flex;
+flex-direction: column;
+            gap: 20px;
+        }
+
+        .contato-item {
+            display: flex;
+align-items: center;
+            gap: 15px;
+        }
+
+        .contato-item i {
+            color: var(--laranja);
+font-size: 1.5rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 45px;
+/* Ícones maiores */
+            height: 45px;
+            border-radius: 50%;
+background-color: var(--cinza-escuro);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+/* Tamanho do ícone */
+        }
+
+        .social-link:hover {
+            background-color: var(--laranja);
+color: var(--preto);
+            transform: translateY(-5px) scale(1.1); /* Animação no hover */
+            box-shadow: 0 0 15px var(--laranja);
+}
+
+        .form-container {
+            background-color: var(--cinza-escuro);
+padding: 40px; /* Mais padding */
+            border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+/* Mais espaço entre grupos */
+        }
+
+        .form-group label {
+            display: block;
+margin-bottom: 10px; /* Mais espaço abaixo do label */
+            font-weight: 600;
+color: var(--branco);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+padding: 14px 18px; /* Mais padding */
+            border-radius: 8px;
+/* Cantos mais arredondados */
+            border: 1px solid var(--cinza-medio);
+background-color: var(--preto);
+            color: var(--branco);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--laranja);
+box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.3);
+            outline: none;
+}
+
+        .form-group textarea {
+            min-height: 150px;
+/* Altura mínima maior */
+            resize: vertical;
+}
+
+        /* ===========================
+           Rodapé
+           =========================== */
+        footer {
+            background-color: var(--cinza-escuro);
+color: #ccc;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+            margin-bottom: 40px;
+}
+
+        .footer-col h3 {
+            color: var(--laranja);
+margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            display: flex;
+flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            transition: color 0.3s ease;
+}
+
+        .footer-links a:hover {
+            color: var(--laranja);
+transform: translateX(5px); /* Novo: leve deslocamento no hover */
+        }
+
+        .copyright {
+            padding-top: 20px;
+border-top: 1px solid var(--cinza-medio);
+            font-size: 0.9rem;
+        }
+
+        /* ===========================
+           Modal
+           =========================== */
+        .modal {
+            display: none;
+position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 10000;
+            align-items: center;
+justify-content: center;
+            padding: 20px;
+            backdrop-filter: blur(5px); /* Novo: efeito de blur */
+        }
+
+        .modal-content {
+            background: var(--cinza-claro);
+width: 100%;
+            max-width: 550px; /* Maior largura */
+            border-radius: 12px;
+padding: 40px; /* Mais padding */
+            position: relative;
+color: var(--preto);
+            animation: modalFadeIn 0.4s ease-out; /* Mais suave */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+transform: translateY(0) scale(1);
+            }
+        }
+
+        .close-btn {
+            position: absolute;
+top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            font-size: 1.8rem;
+/* Ícone maior */
+            cursor: pointer;
+            color: var(--preto);
+transition: transform 0.2s ease;
+        }
+
+        .close-btn:hover {
+            transform: rotate(90deg);
+}
+
+        .modal-content h3 {
+            color: var(--laranja);
+margin-bottom: 1.2em; /* Mais espaço */
+            font-size: 2rem;
+text-align: center;
+        }
+
+        .modal-content form input,
+        .modal-content form select,
+        .modal-content form textarea {
+            width: 100%;
+padding: 16px; /* Mais padding */
+            margin: 10px 0; /* Espaço ajustado */
+            border: 1px solid #ccc;
+border-radius: 8px;
+            font-size: 1rem; /* Fonte ajustada */
+            color: var(--preto);
+background-color: #fff;
+            box-sizing: border-box;
+        }
+
+        .modal-content form button {
+            margin-top: 1.5em; /* Espaço ajustado */
+            width: 100%;
+            padding: 18px;
+/* Mais padding */
+            font-size: 1.1rem;
+}
+        
+        /* ===========================
+           Nova Seção de Modelos de Franquia
+           =========================== */
+        .franquia-modelos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            align-items: stretch; /* Garante que os cards tenham a mesma altura */
+        }
+
+        .modelo-card {
+            background-color: var(--cinza-escuro); 
+            border: 1px solid var(--laranja);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .modelo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 25px var(--laranja);
+        }
+
+        .modelo-header h3 {
+            font-size: 1.8rem;
+            color: var(--laranja);
+            margin-bottom: 10px;
+        }
+
+        .modelo-header p {
+            color: #ccc;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--cinza-medio);
+            padding-bottom: 15px;
+        }
+
+        .modelo-body ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .modelo-body > ul > li {
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: var(--branco);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .modelo-body > ul > li > i {
+            color: var(--laranja-claro);
+            font-size: 1.1rem;
+        }
+
+        .modelo-bonus {
+            background-color: rgba(247, 147, 30, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 600;
+            color: var(--laranja-claro);
+            text-align: center;
+        }
+        
+        .modelo-bonus p {
+            margin-bottom: 0;
+        }
+
+        .modelo-diferenciais {
+            margin-top: 20px;
+            flex-grow: 1;
+        }
+
+        .modelo-diferenciais h4 {
+            color: var(--branco);
+            margin-bottom: 10px;
+        }
+
+        .modelo-diferenciais ul li {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 8px;
+            list-style-type: none; 
+        }
+
+        .modelo-footer {
+            text-align: center;
+            margin-top: auto; 
+            padding-top: 20px;
+        }
+
+        .modelo-footer .btn {
+            width: 100%;
+        }
+
+        .info-adicional-franquia {
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            background: rgba(26, 26, 26, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+            border-left: 5px solid var(--laranja);
+        }
+
+        .info-adicional-franquia h4 {
+            color: var(--laranja);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .info-adicional-franquia h4:first-child {
+            margin-top: 0;
+        }
+
+        .info-adicional-franquia p, .info-adicional-franquia ul {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .info-adicional-franquia ul {
+            list-style-position: inside;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .info-adicional-franquia ul li {
+            padding-left: 1.5em;
+            position: relative;
+        }
+        .info-adicional-franquia ul li::before {
+            content: '✅';
+            position: absolute;
+            left: 0;
+            color: var(--verde);
+        }
+
+        /* ===========================
+           Animações
+           =========================== */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+}
+            50% {
+                transform: translateY(-10px);
+}
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+}
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+}
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+transform: translateY(0);
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: var(--verde);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+animation: pulse-whatsapp 2s infinite; /* Novo: Animação de pulsação */
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) rotate(5deg);
+box-shadow: 0 0 20px var(--verde);
+            animation: none;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+}
+            70% {
+                box-shadow: 0 0 0 20px rgba(46, 204, 113, 0);
+}
+            100% {
+                box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+}
+        }
+
+        /* ===========================
+           Responsividade
+           =========================== */
+        @media (max-width: 992px) {
+            .destaque-content {
+                flex-direction: column;
+}
+
+            .destaque-text, .destaque-image {
+                width: 100%;
+}
+
+            .destaque-image {
+                order: -1;
+}
+
+            .hero h1 {
+                font-size: 2.5rem;
+}
+            .hero p {
+                font-size: 1.2rem;
+}
+        }
+
         @media (max-width: 768px) {
-            .mobile-menu { position: fixed; top: 70px; left: 0; width: 100%; background-color: var(--cinza-escuro); padding: 20px; z-index: 999; display: flex; flex-direction: column; gap: 15px; transform: translateY(-150%); transition: transform 0.3s ease; }
-            .mobile-menu.active { transform: translateY(0); } .nav-links { display: none; } .mobile-menu-btn { display: block; }
+            html {
+                font-size: 14px;
+}
+
+            .hero h1 {
+                font-size: 2.2rem;
+}
+
+            .hero p {
+                font-size: 1.1rem;
+}
+
+            .nav-links {
+                display: none;
+}
+
+            .mobile-menu-btn {
+                display: block;
+}
+
+            .mobile-menu {
+                position: fixed;
+top: 70px; /* Ajustado para nova altura do nav */
+                left: 0;
+                width: 100%;
+                background-color: var(--cinza-escuro);
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+                z-index: 999;
+display: flex;
+                flex-direction: column;
+                gap: 15px;
+                transform: translateY(-150%);
+                transition: transform 0.3s ease;
+}
+
+            .mobile-menu.active {
+                transform: translateY(0);
+}
+
+            section {
+                padding: 60px 0;
+}
+
+            .whatsapp-float {
+                bottom: 20px;
+right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+}
+
+            .hero-buttons {
+                flex-direction: column;
+gap: 10px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+}
+
+            .cards {
+                grid-template-columns: 1fr;
+}
+            
+            .franquia-modelos-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .banner-led p {
+                font-size: 1rem;
+}
+
+            .modal-content {
+                padding: 25px;
+max-height: 85vh;
+            }
         }
     </style>
 </head>
 <body>
-
+<style>
+    #preloader {
+        background-color: #111;
+color: #f7931e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+font-family: sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+</style>
+<div id="preloader">NOSSO MERCADINHO OLYPRESS</div>
+<script>
+    window.addEventListener('load', function () {
+        const loader = document.getElementById('preloader');
+        loader.style.transition = 'opacity 0.8s';
+        loader.style.opacity = 0;
+        setTimeout(() => loader.style.display = 'none', 800);
+    });
+</script>
 <header>
     <img alt="Logo Nosso Mercadinho Olypress" src="logo.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
 </header>
-
 <nav>
     <div class="nav-container container">
-        <div class="nav-links" style="margin: 0 auto;">
-            <a href="#sobre">Diferenciais</a>
-            <a href="#condominio">Para Condomínios</a>
-            <a href="#franquia">Seja Franqueado</a>
-            <a href="#investidor">Investidor</a>
-            <a href="#contato">Contato</a>
+        <a class="logo" href="#" style="margin: 0 auto;"></a>
+        <div class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#condominio">Condomínios</a>
+            <a href="#franquia">Franquias</a>
+  
+          <a href="#contato">Contato</a>
         </div>
-        <button class="mobile-menu-btn" aria-label="Abrir menu de navegação"><i class="fas fa-bars"></i></button>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
     <div class="mobile-menu">
-        <a href="#sobre">Diferenciais</a>
-        <a href="#condominio">Para Condomínios</a>
-        <a href="#franquia">Seja Franqueado</a>
-        <a href="#investidor">Investidor</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#condominio">Condomínios</a>
+        <a href="#franquia">Franquias</a>
+     
+   <a href="#contato">Contato</a>
     </div>
 </nav>
-
 <header class="hero">
     <div class="hero-content container">
         <h1>Conveniência 24h no Seu Condomínio</h1>
-        <p>A maior rede de mercados autônomos de Piracicaba. Instalação gratuita em condomínios e oportunidade de franquia com gestão flexível e retorno rápido.</p>
+        <p>Seu mini mercado autônomo com instalação gratuita, produtos selecionados e suporte completo em Piracicaba.</p>
         <div class="hero-buttons">
             <a class="btn btn-cta" href="#condominio" data-aos="zoom-in" data-aos-delay="300">Quero no meu condomínio</a>
-            <a class="btn btn-cta" href="#franquia" data-aos="zoom-in" data-aos-delay="500">Seja um Franqueado</a>
-        </div>
+            <a class="btn btn-cta" href="#franquia" data-aos="zoom-in" data-aos-delay="500">Seja franqueado</a>
+     
+   </div>
     </div>
 </header>
-
 <div class="banner-led container" data-aos="fade-up" data-aos-delay="200">
-    <p>RESULTADOS DESDE O PRIMEIRO MÊS — GESTÃO FLEXÍVEL: VOCÊ FAZ SEU HORÁRIO — SISTEMA PRÓPRIO E SUPORTE REAL — SEJA NOSSO FRANQUEADO —</p>
+    <p>
+        ABERTO 24 HORAS 7 DIAS POR SEMANA — REPOSIÇÕES CONSTANTES — MAIS DE 800 PRODUTOS — NOSSO MERCADINHO OLYPRESS — SEJA FRANQUEADO — TENHA NO SEU CONDOMÍNIO —
+    </p>
 </div>
-
-<section class="sobre" id="sobre" data-aos="fade-up">
-    <div class="container" style="text-align: center;">
-        <h2>O Ecossistema NOSSO MERCADINHO OLYPRESS</h2>
-        <p style="max-width: 800px; margin: 0 auto 40px auto;">Muito mais que um mercado autônomo, somos uma solução completa que une tecnologia, segurança e comunidade, valorizando seu imóvel e seu tempo.</p>
+<section class="sobre" data-aos="fade-up" data-aos-duration="1000" id="sobre">
+    <div class="container">
+        <h2>Sobre o NOSSO MERCADINHO OLYPRESS</h2>
+        <p>Muito mais do que um mercado autônomo, somos um ponto de encontro comunitário que valoriza a praticidade, 
+segurança e conexão entre os moradores.</p>
         <div class="cards">
             <div class="card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fas fa-handshake"></i>
-                <h3>Assistência Real</h3>
-                <p>Nossa equipe oferece suporte contínuo e treinamento completo, garantindo que você, franqueado, nunca esteja sozinho.</p>
-            </div>
+                <i class="fas fa-users"></i>
+                <h3>Conexão com a Comunidade</h3>
+                <p>Um espaço acolhedor que fortalece os laços entre os moradores, com monitoramento 24h e respeito total à LGPD.</p>
+ 
+           </div>
             <div class="card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-cogs"></i>
-                <h3>Sistema de Gestão Próprio</h3>
-                <p>Tenha total controle do seu negócio com nosso software exclusivo, que gerencia estoque, vendas e relatórios de forma simples e intuitiva.</p>
-            </div>
+                <i class="fas fa-boxes"></i>
+                <h3>Reabastecimento Inteligente</h3>
+                <p>Mix de produtos ajustado por enquetes e preferências locais, sempre atendendo às necessidades do seu condomínio.</p>
+        
+    </div>
             <div class="card" data-aos="zoom-in" data-aos-delay="300">
-                <i class="fas fa-headset"></i>
-                <h3>Segurança Inovadora</h3>
-                <p>Atendimento humano por voz dentro da loja, melhorando a experiência do cliente e inibindo mais de 90% dos casos de furto.</p>
+                <i class="fas fa-shield-alt"></i>
+                <h3>Segurança e Transparência</h3>
+                <p>Monitoramento 24h, foco na privacidade e atendimentos personalizados, garantindo experiência tranquila e confiável.</p>
             </div>
-        </div>
+     
+   </div>
     </div>
 </section>
-
-<section class="indicadores" id="indicadores" data-aos="fade-up">
-    <div class="container">
-        <h2 style="color: var(--branco);">Nossa presença em números</h2>
-        <div class="indicadores-grid">
-            <div class="stat" data-aos="fade-right" data-aos-delay="100">
-                <div class="count" data-target="2023">0</div>
-                <p>Início das operações</p>
-            </div>
-            <div class="stat" data-aos="fade-right" data-aos-delay="200">
-                <div class="count" data-target="900">0</div>
-                <p>produtos no cardápio</p>
-            </div>
-            <div class="stat" data-aos="fade-left" data-aos-delay="300">
-                <div class="count" data-target="100">0</div>
-                <p>de aceitação entre moradores</p>
-            </div>
-            <div class="stat" data-aos="fade-left" data-aos-delay="400">
-                 <div class="count" data-target="90">0</div>
-                <p>% de inibição de furtos</p>
-            </div>
+<section data-aos="fade-up" data-aos-duration="1000" id="indicadores" style="background:#111; color:white; padding:60px 20px;
+text-align:center;">
+    <h2 style="font-size:28px; margin-bottom:40px;">Nossa presença em números</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; max-width:1000px;
+margin:auto;">
+        <div class="stat" style="flex:1 1 220px;" data-aos="fade-right" data-aos-delay="100">
+            <div class="count" data-target="4" style="font-size:40px;
+color:#f7931e;">0</div>
+            <p>anos no mercado</p>
+        </div>
+        <div class="stat" style="flex:1 1 220px;" data-aos="fade-right" data-aos-delay="200">
+            <div class="count" data-target="900" style="font-size:40px;
+color:#f7931e;">0</div>
+            <p>produtos no cardápio</p>
+        </div>
+        <div class="stat" style="flex:1 1 220px;" data-aos="fade-right" data-aos-delay="300">
+            <div class="count" data-target="30" style="font-size:40px;
+color:#f7931e;">0</div>
+            <p>fornecedores homologados</p>
+        </div>
+        <div class="stat" style="flex:1 1 220px;" data-aos="fade-left" data-aos-delay="400">
+            <div class="count" data-target="100" style="font-size:40px;
+color:#f7931e;">0</div>
+            <p>de aceitação entre moradores</p>
+        </div>
+        <div class="stat" style="flex:1 1 220px;" data-aos="fade-left" data-aos-delay="500">
+            <div class="count" data-target="15" style="font-size:40px;
+color:#f7931e;">0</div>
+            <p>meses de retorno estimado</p>
         </div>
     </div>
+    <div style="margin-top:40px;
+font-size:16px; color:#ccc;" data-aos="fade-up" data-aos-delay="600">
+        1ª franquia autônoma de Piracicaba • Condições especiais de lançamento
+    </div>
 </section>
+<script>
+    const counters = document.querySelectorAll('.count');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                
+const update = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText.replace(/\D/g, '') || 0;
+                    const inc = target / 50;
+                    if 
+(current < target) {
+                        counter.innerText = Math.ceil(current + inc);
+                        setTimeout(update, 40);
+                    } else {
+                      
+  counter.innerText = target + (target === 100 ? '%' : '');
+                    }
+                };
+                update();
+                observer.unobserve(counter);
+}
+        });
+    }, {threshold: 0.5});
 
-<section class="midia" data-aos="fade-up" data-aos-duration="1000">
+    counters.forEach(counter => observer.observe(counter));
+</script>
+
+<section class="midia" data-aos="fade-up" data-aos-duration="1000" style="background-color:#111; padding:60px 20px;">
     <div class="container">
         <h2 style="color:#f7931e; text-align:center;">Veja por Dentro</h2>
-        <p class="subtitle">Ambiente real do NOSSO MERCADINHO OLYPRESS</p>
-        <div class="galeria">
-            <a href="foto1.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="100"><img src="foto1.jpeg" alt="Prateleiras com variedade de salgadinhos, biscoitos e snacks."/></a>
-            <a href="foto2.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="200"><img src="foto2.jpeg" alt="Visão ampla do mercadinho com geladeiras de bebidas e freezer de congelados."/></a>
-            <a href="foto3.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="300"><img src="foto3.jpeg" alt="Corredor do mercadinho mostrando a organização dos produtos de limpeza e higiene."/></a>
-            <a href="foto4.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="400"><img src="foto4.jpeg" alt="Geladeira de laticínios com iogurtes, queijos e outros produtos frescos."/></a>
-            <a href="foto5.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="500"><img src="foto5.jpeg" alt="Caixa de autoatendimento onde o cliente escaneia e paga pelos produtos."/></a>
+        <p style="text-align:center; margin-bottom:30px;">Ambiente real do NOSSO MERCADINHO OLYPRESS</p>
+        <div class="galeria" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
+            <a href="foto1.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="100"><img src="foto1.jpeg" style="width:100%; border-radius:10px;"/></a>
+            <a href="foto2.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="200"><img src="foto2.jpeg" style="width:100%; border-radius:10px;"/></a>
+       
+     <a href="foto3.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="300"><img src="foto3.jpeg" style="width:100%; border-radius:10px;"/></a>
+            <a href="foto4.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="400"><img src="foto4.jpeg" style="width:100%;
+border-radius:10px;"/></a>
+            <a href="foto5.jpeg" target="_blank" data-aos="zoom-in" data-aos-delay="500"><img src="foto5.jpeg" style="width:100%;
+border-radius:10px;"/></a>
         </div>
-        <div class="video-container">
-            <video class="video-player" controls poster="caminho/para/poster-do-video.jpg" data-aos="fade-up">
+        <div style="margin-top:40px;
+text-align:center;">
+            <video controls="" style="width: 100%; max-width: 720px; display: block;
+margin: 20px auto;" data-aos="fade-up">
                 <source src="WhatsApp Video 2025-06-04 at 14.00.07.mp4" type="video/mp4"/>
                 Seu navegador não suporta o vídeo.
             </video>
-            <img class="full-width-image" alt="Visão panorâmica do Nosso Mercadinho Olypress, mostrando a diversidade de produtos." src="WhatsApp Image 2025-03-10 at 14.18.13 (2).jpeg" data-aos="fade-up" data-aos-delay="200"/>
+            <img alt="Nosso Mercadinho Olypress por dentro" src="WhatsApp Image 2025-03-10 at 14.18.13 (2).jpeg" style="width: 100%;
+max-width: 900px; display: block; margin: 40px auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" data-aos="fade-up" data-aos-delay="200"/>
         </div>
     </div>
 </section>
-
 <section class="destaque" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="destaque-content">
             <div class="destaque-text">
-                <h2>Como Funciona para o Condomínio</h2>
-                <p>O NOSSO MERCADINHO OLYPRESS é a solução perfeita para condomínios que buscam oferecer conveniência e qualidade de vida aos moradores.</p>
+                <h2>Como Funciona</h2>
+                <p>O NOSSO MERCADINHO OLYPRESS é a solução perfeita para condomínios 
+que buscam oferecer conveniência e qualidade de vida aos moradores.</p>
                 <ul>
                     <li data-aos="fade-right" data-aos-delay="100"><i class="fas fa-check-circle"></i> Sistema PEGUE e PAGUE sem complicações</li>
                     <li data-aos="fade-right" data-aos-delay="200"><i class="fas fa-check-circle"></i> Ambiente monitorado 24 horas por dia</li>
-                    <li data-aos="fade-right" data-aos-delay="300"><i class="fas fa-check-circle"></i> Produtos selecionados e sempre frescos</li>
+               
+     <li data-aos="fade-right" data-aos-delay="300"><i class="fas fa-check-circle"></i> Produtos selecionados e sempre frescos</li>
                     <li data-aos="fade-right" data-aos-delay="400"><i class="fas fa-check-circle"></i> Atendimento personalizado para seu condomínio</li>
                     <li data-aos="fade-right" data-aos-delay="500"><i class="fas fa-check-circle"></i> Sem custo inicial para instalação</li>
                 </ul>
-                <a class="btn" href="#condominio" data-aos="zoom-in" data-aos-delay="600">Saiba mais</a>
+            
+    <a class="btn" href="#condominio" data-aos="zoom-in" data-aos-delay="600">Saiba mais</a>
             </div>
             <div class="destaque-image float-animation" data-aos="zoom-in" data-aos-delay="200">
-                <img src="foto2.jpeg" alt="Demonstração do ambiente do mercadinho autônomo.">
-            </div>
+                </div>
         </div>
     </div>
 </section>
-
 <section class="simulador" data-aos="fade-up" data-aos-duration="1000" id="simulador">
     <div class="container">
         <h2>Experimente Nosso Simulador</h2>
-        <p>Veja como é fácil e intuitivo fazer compras no NOSSO MERCADINHO OLYPRESS:</p>
-        <div class="simulador-embed" data-aos="zoom-in" data-aos-delay="200">
-            <div id="loader-text" style="position:absolute;color:#f7931e;font-size:1.5rem;">Carregando simulador...</div>
-            <iframe style="opacity:0;" loading="lazy" src="https://nossomercadinhoolypress.github.io/Game-Nosso-Mercadinho-/" onload="this.style.opacity=1; document.getElementById('loader-text')?.remove();" title="Simulador de Compras NOSSO MERCADINHO OLYPRESS"></iframe>
+        <p>Veja como é fácil e intuitivo fazer compras 
+no NOSSO MERCADINHO OLYPRESS:</p>
+        <div class="simulador-embed" style="background:#111; display:flex; align-items:center;
+justify-content:center;" data-aos="zoom-in" data-aos-delay="200">
+            <div id="loader-text" style="position:absolute;color:#f7931e;font-size:1.5rem;">Carregando simulador...</div><iframe style="opacity:0;" loading="lazy" src="https://nossomercadinhoolypress.github.io/Game-Nosso-Mercadinho-/" onload="this.style.opacity=1;" title="Simulador de Compras NOSSO MERCADINHO OLYPRESS"></iframe><script>document.querySelector("iframe").addEventListener("load",()=>{document.getElementById("loader-text")?.remove();});</script>
         </div>
     </div>
 </section>
-
-<section class="condominios" id="condominio" data-aos="fade-up">
+<section class="condominios" data-aos="fade-up" data-aos-duration="1000" id="condominio">
     <div class="container">
-        <h2 style="text-align: center;">Valorização e Conveniência para seu Condomínio</h2>
-        <p style="text-align: center;">Ofereça um diferencial que encanta os moradores e valoriza o imóvel, sem nenhum custo ou preocupação para o síndico.</p>
+        <h2>Para Condomínios</h2>
+        <p>Ofereça praticidade e conveniência aos moradores sem nenhum custo inicial. Nós cuidamos de toda a operação:</p>
         <div class="beneficios-list">
-            <div class="beneficio-item" data-aos="fade-up" data-aos-delay="100">
+           
+ <div class="beneficio-item" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-bolt"></i>
                 <div>
-                    <h4>Instalação Gratuita e Rápida</h4>
-                    <p>Equipamentos modernos instalados em até 48h após aprovação, sem custo algum para o condomínio.</p>
-                </div>
+                    <h4>Instalação Rápida</h4>
+                    <p>Equipamentos modernos instalados em até 48h após aprovação.</p>
+              
+  </div>
             </div>
             <div class="beneficio-item" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-shield-alt"></i>
                 <div>
                     <h4>Segurança 24h</h4>
-                    <p>Sistema de monitoramento integrado com câmeras de segurança e nosso exclusivo atendimento por voz.</p>
+                
+    <p>Sistema de monitoramento integrado com câmeras de segurança.</p>
                 </div>
             </div>
             <div class="beneficio-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-sync-alt"></i>
                 <div>
-                    <h4>Operação por Nossa Conta</h4>
-                    <p>Cuidamos de tudo: reposição inteligente de produtos, manutenção e limpeza do espaço.</p>
+            
+        <h4>Reposição Inteligente</h4>
+                    <p>Produtos reabastecidos conforme demanda e preferências locais.</p>
                 </div>
             </div>
             <div class="beneficio-item" data-aos="fade-up" data-aos-delay="400">
                 <i class="fas fa-chart-line"></i>
-                <div>
-                    <h4>Valorização do Imóvel</h4>
-                    <p>Um mercado autônomo é um grande diferencial competitivo que atrai novos moradores e valoriza as unidades.</p>
+    
+            <div>
+                    <h4>Relatórios Mensais</h4>
+                    <p>Transparência total com relatórios de vendas e satisfação.</p>
                 </div>
             </div>
         </div>
-        <div style="text-align: center;" data-aos="zoom-in" data-aos-delay="500">
+    
+    <div style="text-align: center;" data-aos="zoom-in" data-aos-delay="500">
             <button class="btn btn-cta" onclick="abrirModal('modalCondominio')">Quero no Meu Condomínio</button>
         </div>
     </div>
 </section>
 
-<section class="franquias" id="franquia" data-aos="fade-up">
+<section class="franquias" data-aos="fade-up" data-aos-duration="1000" id="franquia">
     <div class="container">
-        <h2>Seja um Franqueado de Sucesso</h2>
-        <p>Invista em um modelo de negócio testado e aprovado. Oferecemos tudo o que você precisa para operar uma franquia lucrativa com autonomia e segurança.</p>
-        <div class="beneficios-list">
-            <div class="beneficio-item" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-clock"></i>
-                <div><h4>Você Faz Seu Horário</h4><p>Tenha liberdade para gerenciar o reabastecimento e as operações, conciliando com suas outras atividades.</p></div>
+        <h2>Seja um Franqueado</h2>
+        [span_0](start_span)<p>Faça parte da primeira rede de mercados autônomos de Piracicaba.[span_0](end_span) [span_1](start_span)Tenha um negócio leve, lucrativo e com suporte completo da franqueadora.[span_1](end_span)</p>
+        
+        <h3 style="margin-top: 60px; font-size: 2rem; color: var(--branco);">Modelos de Franquia — Nosso Mercadinho Olypress</h3>
+        [span_2](start_span)<p style="max-width: 800px; margin: 0 auto 40px;">No Nosso Mercadinho Olypress, oferecemos três modelos de franquia, desenvolvidos para atender diferentes perfis de condomínio e expectativas de investimento.[span_2](end_span) [span_3](start_span)Todos operam de forma 100% autônoma, com gestão simplificada, suporte completo e a força de uma marca validada nos principais empreendimentos de Piracicaba.[span_3](end_span)</p>
+
+        <div class="franquia-modelos-grid">
+            <div class="modelo-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="modelo-header">
+                    <h3>Modelo Clean</h3>
+                    [span_4](start_span)<p>Para condomínios com até 150 residências e com local coberto para instalação.[span_4](end_span)</p>
+                </div>
+                <div class="modelo-body">
+                    <ul>
+                        <li><i class="fas fa-dollar-sign"></i> <div><strong>Investimento total:</strong> R$ 29.900</div></li>
+                        <li><i class="fas fa-file-signature"></i> <div><strong>Taxa de franquia:</strong> R$ 15.000 (inclusa)</div></li>
+                        <li><i class="fas fa-hand-holding-usd"></i> <div><strong>Royalties:</strong> 5% sobre o faturamento</div></li>
+                        <li><i class="fas fa-cash-register"></i> <div><strong>Faturamento médio:</strong> R$ 10.000 a R$ 15.000</div></li>
+                        <li><i class="fas fa-chart-pie"></i> <div><strong>Lucratividade:</strong> 20%</div></li>
+                        <li><i class="fas fa-undo-alt"></i> <div><strong>Payback:</strong> até 24 meses</div></li>
+                    </ul>
+                    <div class="modelo-bonus">
+                        [span_5](start_span)<p>➡️ Bonificação especial para os primeiros franqueados[span_5](end_span)</p>
+                    </div>
+                    <div class="modelo-diferenciais">
+                        <h4>Diferenciais:</h4>
+                        <ul>
+                            [span_6](start_span)<li>✅ Pode ser operado nas horas vagas[span_6](end_span)</li>
+                            [span_7](start_span)<li>✅ Estoque inicial fornecido parcialmente como cortesia[span_7](end_span)</li>
+                            [span_8](start_span)<li>✅ Custo de estrutura pode ser reduzido se já houver ambiente físico.[span_8](end_span)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modelo-footer">
+                    <button class="btn btn-outline" onclick="abrirModal('modalFranqueado')">Tenho Interesse</button>
+                </div>
             </div>
-            <div class="beneficio-item" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-rocket"></i>
-                <div><h4>Resultados Desde o Início</h4><p>Nosso modelo de negócio eficiente permite um potencial de faturamento já no primeiro mês de operação.</p></div>
+            
+            <div class="modelo-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="modelo-header">
+                    <h3>Modelo Standard</h3>
+                    [span_9](start_span)<p>Para condomínios entre 150 e 250 residências.[span_9](end_span)</p>
+                </div>
+                <div class="modelo-body">
+                    <ul>
+                        <li><i class="fas fa-dollar-sign"></i> <div><strong>Investimento total:</strong> R$ 70.200</div></li>
+                        <li><i class="fas fa-file-signature"></i> <div><strong>Taxa de franquia:</strong> R$ 20.000 (inclusa)</div></li>
+                        <li><i class="fas fa-hand-holding-usd"></i> <div><strong>Royalties:</strong> 5% sobre o faturamento</div></li>
+                        <li><i class="fas fa-cash-register"></i> <div><strong>Faturamento médio:</strong> R$ 15.000 a R$ 19.000</div></li>
+                        <li><i class="fas fa-chart-pie"></i> <div><strong>Lucratividade:</strong> 21%</div></li>
+                        <li><i class="fas fa-undo-alt"></i> <div><strong>Payback:</strong> entre 18 e 24 meses</div></li>
+                    </ul>
+                    <div class="modelo-bonus">
+                        [span_10](start_span)<p>➡️ Bonificação de inauguração disponível[span_10](end_span)</p>
+                    </div>
+                    <div class="modelo-diferenciais">
+                        <h4>Diferenciais:</h4>
+                        <ul>
+                            [span_11](start_span)<li>✅ Operação simples, sem necessidade de funcionários[span_11](end_span)</li>
+                            [span_12](start_span)<li>✅ Estrutura modular, com otimização de espaço[span_12](end_span)</li>
+                            [span_13](start_span)<li>✅ Estoque inicial parcialmente incluso como cortesia[span_13](end_span)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modelo-footer">
+                    <button class="btn btn-outline" onclick="abrirModal('modalFranqueado')">Tenho Interesse</button>
+                </div>
             </div>
-            <div class="beneficio-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-users-cog"></i>
-                <div><h4>Suporte Real e Contínuo</h4><p>Conte com nossa equipe para marketing, operações, gestão e suporte técnico sempre que precisar.</p></div>
-            </div>
-            <div class="beneficio-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="fas fa-chart-pie"></i>
-                <div><h4>Sistema de Gestão Próprio</h4><p>Controle seu negócio na palma da sua mão com nosso software exclusivo e fácil de usar.</p></div>
+
+            <div class="modelo-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="modelo-header">
+                    <h3>Modelo Premium</h3>
+                    [span_14](start_span)<p>Para grandes condomínios, acima de 250 residências.[span_14](end_span)</p>
+                </div>
+                <div class="modelo-body">
+                    <ul>
+                        <li><i class="fas fa-dollar-sign"></i> <div><strong>Investimento total:</strong> R$ 107.400</div></li>
+                        <li><i class="fas fa-file-signature"></i> <div><strong>Taxa de franquia:</strong> R$ 30.000 (inclusa)</div></li>
+                        <li><i class="fas fa-hand-holding-usd"></i> <div><strong>Royalties:</strong> 5% sobre o faturamento</div></li>
+                        <li><i class="fas fa-cash-register"></i> <div><strong>Faturamento médio:</strong> R$ 35.000 a R$ 50.000</div></li>
+                        <li><i class="fas fa-chart-pie"></i> <div><strong>Lucratividade:</strong> 20%</div></li>
+                        <li><i class="fas fa-undo-alt"></i> <div><strong>Payback:</strong> entre 14 e 16 meses</div></li>
+                    </ul>
+                    <div class="modelo-bonus">
+                        [span_15](start_span)<p>➡️ Condições especiais para os primeiros franqueados da rede[span_15](end_span)</p>
+                    </div>
+                    <div class="modelo-diferenciais">
+                        <h4>Diferenciais:</h4>
+                        <ul>
+                            [span_16](start_span)<li>✅ Alto potencial de faturamento e rentabilidade[span_16](end_span)</li>
+                            [span_17](start_span)<li>✅ Estoque inicial parcialmente incluso como cortesia[span_17](end_span)</li>
+                            [span_18](start_span)<li>✅ Retorno mais rápido e estrutura preparada para escala[span_18](end_span)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modelo-footer">
+                    <button class="btn btn-outline" onclick="abrirModal('modalFranqueado')">Tenho Interesse</button>
+                </div>
             </div>
         </div>
-        <div style="margin-top: 40px;" data-aos="zoom-in" data-aos-delay="500">
-            <button class="btn btn-cta" onclick="abrirModal('modalValores')">Conheça os Modelos de Franquia</button>
+        
+        <div class="info-adicional-franquia" data-aos="fade-up">
+            <h4>Importante:</h4>
+            [span_19](start_span)<p>O valor de investimento total já inclui a taxa de franquia e contempla os principais custos de implantação da unidade.[span_19](end_span)</p>
+            
+            <h4>Vantagens Comuns a Todos os Modelos:</h4>
+            <ul>
+                <li>Suporte completo desde a implantação até a operação</li>
+                <li>Processos validados e gestão facilitada</li>
+                <li>Royalties fixos e isenção de fundo de propaganda nacional</li>
+                <li>Payback transparente, com projeções realistas e sustentáveis</li>
+            </ul>
+
+            [span_20](start_span)<h4>Como é calculado o Payback?[span_20](end_span)</h4>
+            [span_21](start_span)<p>O payback considera o investimento total (incluindo taxa de franquia), o faturamento médio mensal e a lucratividade prevista.[span_21](end_span) [span_22](start_span)As faixas estimadas já contemplam o tempo de maturação, sazonalidades e capital de giro, oferecendo uma projeção sólida e honesta para o investidor.[span_22](end_span)</p>
         </div>
+
     </div>
 </section>
 
-<section class="depoimentos" data-aos="fade-up">
-     <div class="container">
-        <h2 style="text-align: center;">O que Nossos Parceiros Dizem</h2>
+<section class="depoimentos" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+        <h2>O que dizem sobre nós</h2>
+        <p>Confira a opinião de quem já experimentou o NOSSO MERCADINHO OLYPRESS:</p>
         <div class="depoimentos-container slick-carousel">
             <div class="depoimento">
-                <div class="depoimento-texto">"Desde que instalaram o mercadinho, a vida dos moradores ficou muito mais prática. Produtos de qualidade e atendimento excelente."</div>
+         
+       <div class="depoimento-texto">
+                    "Desde que instalaram o mercadinho no nosso condomínio, a vida dos moradores ficou muito mais prática. Os produtos são de qualidade e o atendimento é excelente."
+</div>
                 <div class="depoimento-autor">
-                    <svg class="avatar-svg" viewBox="0 0 100 100" role="img" aria-label="Avatar de Maria Silva"><circle cx="50" cy="50" r="50" fill="#f7931e"/><text x="50%" y="50%" text-anchor="middle" fill="#000" font-size="40px" dy=".3em">MS</text></svg>
-                    <div class="autor-info"><h4>Maria Silva</h4><p>Síndica - Condomínio Solar das Flores</p></div>
+                    <img alt="Maria Silva" src="https://randomuser.me/api/portraits/women/45.jpg"/>
+                    <div class="autor-info">
+                        <h4>Maria Silva</h4>
+              
+          <p>Síndica - Condomínio Solar das Flores</p>
+                    </div>
                 </div>
             </div>
             <div class="depoimento">
-                <div class="depoimento-texto">"Ser franqueado foi a melhor decisão. O suporte da franqueadora é excelente e o negócio tem um retorno muito bom com poucas horas de dedicação."</div>
+                <div class="depoimento-texto">
+       
+             "Como morador, adoro a praticidade de poder comprar itens básicos a qualquer hora. O sistema é muito intuitivo e nunca tive problemas."
+</div>
                 <div class="depoimento-autor">
-                    <svg class="avatar-svg" viewBox="0 0 100 100" role="img" aria-label="Avatar de Ana Paula"><circle cx="50" cy="50" r="50" fill="#f7931e"/><text x="50%" y="50%" text-anchor="middle" fill="#000" font-size="40px" dy=".3em">AP</text></svg>
-                    <div class="autor-info"><h4>Ana Paula</h4><p>Franqueada - Zona Norte</p></div>
+                    <img alt="Carlos Mendes" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+                    <div class="autor-info">
+                        <h4>Carlos Mendes</h4>
+              
+          <p>Morador - Residencial Green Valley</p>
+                    </div>
+                </div>
+            </div>
+            <div class="depoimento">
+                <div class="depoimento-texto">
+        
+            "Ser franqueado da NOSSO MERCADINHO OLYPRESS foi a melhor decisão que tomei. O suporte da franqueadora é excelente e o negócio tem um retorno muito bom."
+</div>
+                <div class="depoimento-autor">
+                    <img alt="Ana Paula" src="https://randomuser.me/api/portraits/women/68.jpg"/>
+                    <div class="autor-info">
+                        <h4>Ana Paula</h4>
+              
+          <p>Franqueada - Zona Norte</p>
+                    </div>
                 </div>
             </div>
              <div class="depoimento">
-                <div class="depoimento-texto">"A praticidade de ter tudo no térreo mudou nossa rotina. O sistema de voz para ajudar é um diferencial incrível!"</div>
+                <div class="depoimento-texto">
+        
+            "A praticidade de ter tudo no térreo mudou nossa rotina."
+</div>
                 <div class="depoimento-autor">
-                    <svg class="avatar-svg" viewBox="0 0 100 100" role="img" aria-label="Avatar de Denise"><circle cx="50" cy="50" r="50" fill="#f7931e"/><text x="50%" y="50%" text-anchor="middle" fill="#000" font-size="50px" dy=".3em">D</text></svg>
-                    <div class="autor-info"><h4>Denise</h4><p>Moradora</p></div>
+                    <img alt="Denise" src="https://randomuser.me/api/portraits/women/12.jpg"/>
+                    <div class="autor-info">
+                        <h4>Denise</h4>
+                
+        <p>Moradora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="depoimento">
+                <div class="depoimento-texto">
+              
+      "Tivemos aumento na valorização do imóvel após a instalação."
+</div>
+                <div class="depoimento-autor">
+                    <img alt="Gestão" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                    <div class="autor-info">
+                        <h4>Gestão</h4>
+                
+        <p>Cond. Esmeralda</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<section class="investidor" id="investidor" data-aos="fade-up">
-    <div class="container">
-        <h2>Área do Investidor</h2>
-        <p>Descubra o modelo de franquia ideal para seu perfil. Oferecemos planos flexíveis para diferentes níveis de investimento, todos com alto potencial de lucratividade e o suporte completo da nossa marca.</p>
-        <button class="btn btn-cta" onclick="abrirModal('modalValores')" data-aos="zoom-in">Consulte Nossos Modelos de Franquia</button>
-    </div>
-</section>
-
 <section class="contato" data-aos="fade-up" data-aos-duration="1000" id="contato">
     <div class="container">
-        <h2 style="text-align: center;">Fale Conosco</h2>
-        <p style="text-align: center;">Tem dúvidas ou quer saber mais sobre nossas soluções? Nossa equipe está pronta para ajudar!</p>
-        <div class="contato-container" style="margin-top: 40px;">
+        <h2>Entre em Contato</h2>
+        <p>Tem dúvidas ou quer 
+saber mais sobre nossas soluções? Fale conosco!</p>
+        <div class="contato-container">
             <div class="contato-info" data-aos="fade-right" data-aos-delay="100">
                 <div class="contato-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <div><h4>Endereço</h4><p>Piracicaba, SP - Brasil</p></div>
+                    <div>
+           
+             <h4>Endereço</h4>
+                        <p>Piracicaba, SP - Brasil</p>
+                    </div>
                 </div>
                 <div class="contato-item">
-                    <i class="fas fa-phone-alt"></i>
-                    <div><h4>Telefone</h4><p>(19) 98356-9940</p></div>
+       
+             <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(19) 98356-9940</p>
+                
+    </div>
                 </div>
                 <div class="contato-item">
                     <i class="fab fa-whatsapp"></i>
-                    <div><h4>WhatsApp</h4><p>(19) 99660-0929</p></div>
+                    <div>
+                     
+   <h4>WhatsApp</h4>
+                        <p>(19) 99660-0929</p>
+                    </div>
                 </div>
                 <div class="contato-item">
-                    <i class="fas fa-envelope"></i>
-                    <div><h4>E-mail</h4><p>nossomercadinho@olypress.com.br</p></div>
-                </div>
+                   
+ <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>nossomercadinho@olypress.com.br</p>
+                    </div>
+         
+       </div>
                 <div class="social-links">
-                    <a class="social-link" href="https://www.instagram.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="200" aria-label="Visite nosso Instagram"><i class="fab fa-instagram"></i></a>
-                    <a class="social-link" href="https://www.facebook.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="300" aria-label="Visite nosso Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social-link" href="https://www.linkedin.com/company/olypress" target="_blank" data-aos="zoom-in" data-aos-delay="400" aria-label="Visite nosso LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+     
+               <a class="social-link" href="https://www.facebook.com/olypressnossomercadinho" target="_blank" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-link" href="https://www.linkedin.com/company/olypress" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+         
+               <i class="fab fa-linkedin-in"></i>
+                    </a>
                 </div>
             </div>
             <div class="form-container" data-aos="fade-left" data-aos-delay="200">
                 <form id="formContato">
-                    <div class="form-group"><label for="nome">Nome</label><input id="nome" name="nome" required="" type="text"/></div>
-                    <div class="form-group"><label for="email">E-mail</label><input id="email" name="email" required="" type="email"/></div>
-                    <div class="form-group"><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel"/></div>
-                    <div class="form-group"><label for="assunto">Assunto</label><select id="assunto" name="assunto" required=""><option value="">Selecione...</option><option value="condominio">Quero no meu condomínio</option><option value="franquia">Quero ser franqueado</option><option value="duvida">Dúvidas</option><option value="outro">Outro</option></select></div>
-                    <div class="form-group"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" required=""></textarea></div>
+   
+                 <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" required="" type="text"/>
+                    </div>
+         
+           <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" required="" type="email"/>
+                    </div>
+               
+     <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" name="telefone" type="tel"/>
+                    </div>
+                    <div class="form-group">
+ 
+                       <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required="">
+                            <option value="">Selecione...</option>
+                    
+        <option value="condominio">Quero no meu condomínio</option>
+                            <option value="franquia">Quero ser franqueado</option>
+                            <option value="duvida">Dúvidas</option>
+                            
+<option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+         
+               <textarea id="mensagem" name="mensagem" required=""></textarea>
+                    </div>
                     <button class="btn" type="submit">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
+   
+ </div>
+</section>
+<section data-aos="fade-up" data-aos-duration="1000" id="faq" style="background-color: var(--cinza-claro); padding: 60px 20px;">
+    <h2 style="text-align: center; width: 100%;
+color: var(--preto);">Perguntas Frequentes</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1000px;
+margin: 40px auto;">
+        <div style="flex: 1 1 45%;
+min-width: 300px;">
+            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco);
+padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="100">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Como funciona o mercadinho no condomínio? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    Instalamos um ponto autônomo, acessível 24h por dia, com tecnologia "pegue e pague" para a conveniência dos moradores.
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="200">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Tem custo para o condomínio? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    Não. O modelo é implantado sem custos de instalação ou manutenção para o residencial. Toda a operação é nossa responsabilidade.
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="300">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Como é feita a segurança? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    Contamos com câmeras internas de alta resolução e um sistema antifraude robusto para garantir a segurança e a integridade do mercadinho.
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="400">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Quem cuida da reposição dos produtos? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    Nossa equipe realiza visitas regulares para garantir o reabastecimento constante e a organização do espaço, baseada na demanda e preferência dos moradores.
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="500">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Pode ser instalado em qualquer espaço? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    Sim! Adaptamos o modelo ao ambiente disponível no seu condomínio, otimizando o espaço para a melhor experiência.
+                </p>
+            </details>
+        </div>
+        <div style="flex: 1 1 45%;
+min-width: 300px;">
+            <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco);
+padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="100">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Quanto custa para ser franqueado? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    [span_23](start_span)Temos modelos de franquia acessíveis e escaláveis. Navegue pela seção de Franquias em nosso site ou entre em contato para conhecer as opções de investimento e retorno.[span_23](end_span)
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="200">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Preciso contratar equipe? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    Não. [span_24](start_span)A operação do mercadinho é 100% autônoma, minimizando seus custos operacionais.[span_24](end_span)
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="300">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Como recebo o suporte? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    [span_25](start_span)Oferecemos acompanhamento técnico e estratégico completo, desde a implantação até a gestão diária, garantindo seu sucesso.[span_25](end_span)
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="400">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    Onde posso abrir minha franquia? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    [span_26](start_span)Nossas franquias são ideais para condomínios residenciais e comerciais, empresas e outros locais com grande fluxo de pessoas.[span_26](end_span)
+                </p>
+            </details>
+            <details class="faq-item" style="margin-bottom: 15px;
+background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+transition: all 0.3s ease;" data-aos="fade-up" data-aos-delay="500">
+                <summary style="font-weight: bold;
+color: var(--laranja); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                    O retorno é rápido? <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i>
+                </summary>
+                <p style="color: var(--cinza-medio);
+font-size: 15px; padding-top: 15px; border-top: 1px solid #eee; margin-top: 15px;">
+                    [span_27](start_span)Com uma boa gestão e o suporte da franqueadora, o payback pode ser surpreendentemente rápido, proporcionando um excelente retorno sobre o investimento.[span_27](end_span)
+                </p>
+            </details>
+        </div>
     </div>
 </section>
-
-<section class="faq" data-aos="fade-up" id="faq">
-    <h2 style="text-align: center; width: 100%; color: var(--preto);">Perguntas Frequentes</h2>
-    <div class="faq-grid">
-        <div class="faq-column">
-            <details class="faq-item" data-aos="fade-up" data-aos-delay="100"><summary>Como funciona o mercadinho no condomínio? <i class="fas fa-chevron-down"></i></summary><p>Instalamos um ponto autônomo, acessível 24h por dia, com tecnologia "pegue e pague" para a conveniência dos moradores.</p></details>
-            <details class="faq-item" data-aos="fade-up" data-aos-delay="200"><summary>Tem custo para o condomínio? <i class="fas fa-chevron-down"></i></summary><p>Não. O modelo é implantado sem custos de instalação ou manutenção para o residencial. Toda a operação é nossa responsabilidade.</p></details>
-            <details class="faq-item" data-aos="fade-up" data-aos-delay="300"><summary>Como é feita a segurança? <i class="fas fa-chevron-down"></i></summary><p>Contamos com câmeras internas de alta resolução, sistema antifraude e um exclusivo sistema de atendimento por voz que inibe mais de 90% das tentativas de furto.</p></details>
-        </div>
-        <div class="faq-column">
-            <details class="faq-item" data-aos="fade-up" data-aos-delay="100"><summary>Quanto custa para ser franqueado? <i class="fas fa-chevron-down"></i></summary><p>Temos modelos de franquia acessíveis e escaláveis. Clique em "Consulte Nossos Modelos de Franquia" para conhecer as opções de investimento e retorno.</p></details>
-            <details class="faq-item" data-aos="fade-up" data-aos-delay="200"><summary>Preciso ter experiência? <i class="fas fa-chevron-down"></i></summary><p>Não. Oferecemos treinamento completo e suporte contínuo em todas as áreas do negócio, da operação à gestão.</p></details>
-            <details class="faq-item" data-aos="fade-up" data-aos-delay="300"><summary>O retorno é rápido? <i class="fas fa-chevron-down"></i></summary><p>Com nosso modelo de negócio otimizado e o suporte da franqueadora, o potencial de retorno sobre o investimento é um dos mais rápidos do mercado.</p></details>
-        </div>
-    </div>
-</section>
-
-<section id="grafico" class="grafico-crescimento">
+<section id="grafico" style="background:#fff;
+padding:60px 20px; text-align:center;">
     <h2 style="font-size:26px; color:#222;">Crescimento da rede</h2>
-    <canvas id="crescimentoChart"></canvas>
+    <canvas id="crescimentoChart" style="max-width: 100%; height: auto;
+margin: auto; display: block; padding: 10px;"></canvas>
 </section>
-
-<footer data-aos="fade-up">
+<footer>
     <div class="container">
-        <div class="copyright">
-            <p>© 2025 NOSSO MERCADINHO OLYPRESS — Todos os direitos reservados. CNPJ: 51.117.279/0001-29</p>
+        <div class="footer-content">
+            <div class="footer-col" data-aos="fade-right" data-aos-delay="100">
+                <h3>NOSSO MERCADINHO OLYPRESS</h3>
+                <p>Rede de mercados autônomos 24h para condomínios. Conveniência, segurança e qualidade em primeiro lugar.</p>
+            </div>
+       
+     <div class="footer-col" data-aos="fade-right" data-aos-delay="200">
+                <h3>Links Rápidos</h3>
+                <div class="footer-links">
+                    <a href="#sobre">Sobre Nós</a>
+                    <a href="#condominio">Para Condomínios</a>
+              
+      <a href="#franquia">Franquias</a>
+                    <a href="#contato">Contato</a>
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                </div>
+            </div>
+            <div class="footer-col" data-aos="fade-right" data-aos-delay="300">
+      
+          <h3>Contato</h3>
+                <div class="footer-links">
+                    <a href="tel:19983569940"><i class="fas fa-phone-alt"></i> (19) 98356-9940</a>
+                    <a href="https://wa.me/5519996600929"><i class="fab fa-whatsapp"></i> (19) 99660-0929</a>
+                    <a href="mailto:nossomercadinho@olypress.com.br"><i class="fas 
+fa-envelope"></i> nossomercadinho@olypress.com.br</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright" data-aos="fade-up" data-aos-delay="400">
+            <p>© 2025 NOSSO MERCADINHO OLYPRESS — Todos os direitos reservados.
+CNPJ: 51.117.279/0001-29</p>
         </div>
     </div>
 </footer>
-
 <div class="modal" id="modalCondominio">
     <div class="modal-content">
-        <button class="close-btn" onclick="fecharModal('modalCondominio')" aria-label="Fechar formulário">×</button>
+        <button class="close-btn" onclick="fecharModal('modalCondominio')">×</button>
         <h3>Quero no Meu Condomínio</h3>
         <form id="formCondominio">
-            <input name="nome" placeholder="Seu Nome Completo *" required type="text"/>
-            <select name="feitoPor" required>
-                <option value="">Você é... *</option><option value="Sindico">Síndico</option><option value="Administrador">Administrador</option><option value="Presidente">Presidente</option><option value="Morador">Morador</option><option value="Outro">Outro</option>
+            <input name="nome" placeholder="Seu Nome Completo *" required="" type="text"/>
+            <select name="feitoPor" required="">
+                <option 
+value="">Você é... *</option>
+                <option value="Sindico">Síndico</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Presidente">Presidente</option>
+                <option value="Morador">Morador</option>
+                <option value="Outro">Outro</option>
             </select>
-            <input name="residencias" placeholder="Quantas residências? *" required type="number"/>
+ 
+           <input name="residencias" placeholder="Quantas residências? *" required="" type="number"/>
             <input name="condominio" placeholder="Nome do Condomínio" type="text"/>
             <input name="email" placeholder="Seu E-mail para Retorno (opcional)" type="text"/>
-            <p style="font-size: 0.9rem; color: var(--laranja); margin-top: 0.5em;">Atendemos somente Piracicaba no momento.</p>
+            <p style="font-size: 0.9rem;
+color: var(--laranja); margin-top: 0.5em;">
+                Atendemos somente Piracicaba no momento.
+            </p>
             <button class="btn" type="submit">Enviar Interesse</button>
         </form>
     </div>
 </div>
-
 <div class="modal" id="modalFranqueado">
     <div class="modal-content">
-        <button class="close-btn" onclick="fecharModal('modalFranqueado')" aria-label="Fechar formulário">×</button>
-        <h3>Interesse em Franquia</h3>
+        <button class="close-btn" onclick="fecharModal('modalFranqueado')">×</button>
+        <h3>Seja Franqueado</h3>
         <form id="formFranqueado">
-            <input type="hidden" id="planoInteresse" name="planoInteresse" value="">
-            <input name="nome" placeholder="Seu Nome Completo *" required type="text"/>
-            <input name="profissao" placeholder="Sua Profissão / Ramo de Atuação *" required type="text"/>
-            <select name="experiencia" required>
+   
+         <input name="nome" placeholder="Seu Nome Completo *" required="" type="text"/>
+            <input name="profissao" placeholder="Sua Profissão / Ramo de Atuação *" required="" type="text"/>
+            <select name="experiencia" required="">
                 <option value="">Tem experiência no ramo? *</option>
                 <option value="SimMercados">Sim, no ramo de mercados</option>
-                <option value="SimGestao">Sim, em gestão</option>
+      
+          <option value="SimGestao">Sim, em gestão</option>
                 <option value="NaoMasInteresse">Não, mas tenho interesse</option>
             </select>
-            <textarea name="motivo" placeholder="Por que deseja abrir uma franquia? *" required rows="4"></textarea>
+            <textarea name="motivo" placeholder="Por que deseja abrir uma franquia?
+*" required="" rows="4"></textarea>
             <input name="email" placeholder="Seu E-mail para Retorno (opcional)" type="text"/>
             <button class="btn" type="submit">Enviar Interesse</button>
         </form>
     </div>
 </div>
-
-<div class="modal" id="modalValores">
-    <div class="modal-content">
-        <button class="close-btn" onclick="fecharModal('modalValores')" aria-label="Fechar">×</button>
-        <h3>Modelos de Franquia</h3>
-        <p style="text-align:center; margin-top:-1em; margin-bottom:2em;">Escolha o plano que melhor se adapta ao seu perfil de investidor.</p>
-
-        <details class="plan-details">
-            <summary>Plano Microfranquia Express <i class="fas fa-chevron-down"></i></summary>
-            <div class="plan-content">
-                <p>Ideal para condomínios menores (até 100 unidades) ou áreas de convivência em empresas.</p>
-                <ul>
-                    <li><i class="fas fa-check"></i>Mix de produtos essenciais</li>
-                    <li><i class="fas fa-check"></i>Estrutura compacta e otimizada</li>
-                    <li><i class="fas fa-check"></i>Acesso ao sistema de gestão</li>
-                </ul>
-                <div class="plan-price">A partir de R$ 25.000</div>
-                <button class="btn btn-cta btn-invest" onclick="selecionarPlano('Plano Microfranquia Express')">Quero Fazer Esse Investimento</button>
-            </div>
-        </details>
-
-        <details class="plan-details">
-            <summary>Plano Franquia Padrão <i class="fas fa-chevron-down"></i></summary>
-            <div class="plan-content">
-                <p>O nosso modelo mais popular, perfeito para condomínios de médio porte (100 a 300 unidades).</p>
-                <ul>
-                    <li><i class="fas fa-check"></i>Mix de produtos completo e personalizado</li>
-                    <li><i class="fas fa-check"></i>Estrutura com freezers e geladeiras adicionais</li>
-                    <li><i class="fas fa-check"></i>Suporte de marketing regional</li>
-                </ul>
-                <div class="plan-price">A partir de R$ 45.000</div>
-                <button class="btn btn-cta btn-invest" onclick="selecionarPlano('Plano Franquia Padrão')">Quero Fazer Esse Investimento</button>
-            </div>
-        </details>
-
-        <details class="plan-details">
-            <summary>Plano Franquia Master <i class="fas fa-chevron-down"></i></summary>
-            <div class="plan-content">
-                <p>Para grandes condomínios (+300 unidades) ou investidores que desejam operar múltiplas unidades.</p>
-                <ul>
-                    <li><i class="fas fa-check"></i>Mix de produtos premium e expansivo</li>
-                    <li><i class="fas fa-check"></i>Loja completa com estrutura robusta</li>
-                    <li><i class="fas fa-check"></i>Condições especiais para expansão</li>
-                </ul>
-                <div class="plan-price">A partir de R$ 70.000</div>
-                <button class="btn btn-cta btn-invest" onclick="selecionarPlano('Plano Franquia Master')">Quero Fazer Esse Investimento</button>
-            </div>
-        </details>
-    </div>
-</div>
-
-<a class="whatsapp-float" href="https://wa.me/5519996600929" target="_blank" aria-label="Fale conosco no WhatsApp">
+<a class="whatsapp-float" href="https://wa.me/5519996600929" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     // Inicializar AOS
-    AOS.init({ duration: 1200, once: true });
+    AOS.init({
+        duration: 1200,
+        once: true, // Animações acontecem apenas uma vez ao rolar
+  
+  });
 
     // Funções para abrir e fechar modais
     function abrirModal(id) {
         document.getElementById(id).style.display = 'flex';
         document.body.style.overflow = 'hidden';
-    }
+}
+
     function fecharModal(id) {
         document.getElementById(id).style.display = 'none';
         document.body.style.overflow = 'auto';
-    }
-
-    // Função para selecionar plano e abrir formulário de franqueado
-    function selecionarPlano(nomePlano) {
-        // Preenche o campo oculto no formulário de franqueado
-        const planoInput = document.getElementById('planoInteresse');
-        if(planoInput) {
-            planoInput.value = nomePlano;
-        }
-        
-        // Fecha o modal de valores e abre o de franqueado
-        fecharModal('modalValores');
-        abrirModal('modalFranqueado');
-    }
+}
 
     // Menu mobile
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
-    mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
-    document.querySelectorAll('.mobile-menu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.remove('active')));
-
-    // Fechar modal ao clicar fora
-    window.addEventListener('click', e => {
-        if (e.target.classList.contains('modal')) fecharModal(e.target.id);
+mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
     });
-
-    // Lógica do Acordeão (apenas um aberto por vez)
-    const allDetails = document.querySelectorAll('.modal .plan-details');
-    allDetails.forEach(details => {
-        details.addEventListener('toggle', event => {
-            if (details.open) {
-                allDetails.forEach(d => {
-                    if (d !== details) d.open = false;
-                });
-            }
+// Fechar menu ao clicar em um link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
         });
     });
+// Fechar modal ao clicar fora
+    window.addEventListener('click', function (e) {
+        if (e.target.classList.contains('modal')) {
+            fecharModal(e.target.id);
+        }
+    });
+// Formulário Condomínio
+    document.getElementById('formCondominio').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const dados = new FormData(this);
 
-    // Formulários e Contador
-    document.addEventListener('DOMContentLoaded', () => {
-        // Formulário Condomínio
-        document.getElementById('formCondominio')?.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const dados = new FormData(this);
-            let mensagem = `Olá! Tenho interesse em instalar o NOSSO MERCADINHO OLYPRESS no meu condomínio.%0A%0A`;
-            mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
-            mensagem += `*Função:* ${encodeURIComponent(dados.get('feitoPor'))}%0A`;
-            mensagem += `*Condomínio:* ${encodeURIComponent(dados.get('condominio')) || 'Não informado'}%0A`;
-            mensagem += `*Residências:* ${encodeURIComponent(dados.get('residencias'))}%0A`;
-            if (dados.get('email')) {
-                mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
-            }
-            mensagem += `%0APor favor, envie mais detalhes.`;
-            window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
-            fecharModal('modalCondominio');
-            alert('Seu interesse foi registrado! Você será redirecionado para o WhatsApp para concluir.');
-        });
-
-        // Formulário Franqueado com plano de interesse
-        document.getElementById('formFranqueado')?.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const dados = new FormData(this);
-            let mensagem = `Olá! Tenho interesse em me tornar franqueado do NOSSO MERCADINHO OLYPRESS.%0A%0A`;
-            
-            // Adiciona o plano de interesse se ele existir
-            if(dados.get('planoInteresse')) {
-                mensagem += `*Plano de Interesse:* ${encodeURIComponent(dados.get('planoInteresse'))}%0A`;
-            }
-
-            mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
-            mensagem += `*Profissão/Ramo:* ${encodeURIComponent(dados.get('profissao'))}%0A`;
-            mensagem += `*Experiência:* ${encodeURIComponent(dados.get('experiencia'))}%0A`;
-            mensagem += `*Motivo:* ${encodeURIComponent(dados.get('motivo'))}%0A`;
-            if (dados.get('email')) {
-                mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
-            }
-            mensagem += `%0AGostaria de mais informações, por favor.`;
-            window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
-            fecharModal('modalFranqueado');
-            alert('Seu interesse foi registrado! Você será redirecionado para o WhatsApp para concluir.');
-        });
-        
-        // Formulário Contato
-        document.getElementById('formContato')?.addEventListener('submit', function (e) {
-            e.preventDefault();
-            const dados = new FormData(this);
-            let mensagem = `Nova mensagem do site NOSSO MERCADINHO OLYPRESS:%0A%0A`;
-            mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+        let mensagem = `Olá! Tenho interesse em instalar o NOSSO MERCADINHO OLYPRESS no meu condomínio.%0A%0A`;
+        mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+        mensagem += `*Função:* ${encodeURIComponent(dados.get('feitoPor'))}%0A`;
+        mensagem += `*Condomínio:* ${encodeURIComponent(dados.get('condominio')) || 'Não informado'}%0A`;
+        mensagem += `*Residências:* ${encodeURIComponent(dados.get('residencias'))}%0A`;
+  
+      if (dados.get('email')) {
             mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
-            if (dados.get('telefone')) {
-                mensagem += `*Telefone:* ${encodeURIComponent(dados.get('telefone'))}%0A`;
-            }
-            mensagem += `*Assunto:* ${encodeURIComponent(dados.get('assunto'))}%0A`;
-            mensagem += `*Mensagem:* ${encodeURIComponent(dados.get('mensagem'))}%0A`;
-            window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
-            alert('Sua mensagem será enviada pelo WhatsApp. Por favor, conclua o envio no aplicativo.');
-            this.reset();
-        });
+        }
+        mensagem += `%0APor favor, envie mais detalhes.`;
 
-        const counters = document.querySelectorAll('.count');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counter = entry.target;
-                    const update = () => {
-                        const target = +counter.getAttribute('data-target');
-                        const current = +counter.innerText.replace(/\D/g, '') || 0;
-                        const inc = target / 50 > 1 ? target / 50 : 1;
-                        if (current < target) {
-                            counter.innerText = Math.ceil(current + inc);
-                            setTimeout(update, 40);
-                        } else {
-                            counter.innerText = target + (String(target).includes('90') || String(target).includes('100') ? '%' : '');
-                        }
-                    };
-                    update();
-                    observer.unobserve(counter);
-                }
-            });
-        }, { threshold: 0.5 });
-        counters.forEach(counter => observer.observe(counter));
+        window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
+        fecharModal('modalCondominio');
+
+        alert('Seu interesse foi registrado! Entraremos em contato em breve.');
+});
+
+    // Formulário Franqueado
+    document.getElementById('formFranqueado').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const dados = new FormData(this);
+
+        let mensagem = `Olá! Tenho interesse em me tornar franqueado do NOSSO MERCADINHO OLYPRESS.%0A%0A`;
+        mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+        mensagem += `*Profissão/Ramo:* ${encodeURIComponent(dados.get('profissao'))}%0A`;
+        mensagem += `*Experiência:* ${encodeURIComponent(dados.get('experiencia'))}%0A`;
+        mensagem += `*Motivo:* ${encodeURIComponent(dados.get('motivo'))}%0A`;
+     
+   if (dados.get('email')) {
+            mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
+        }
+        mensagem += `%0AGostaria de mais informações, por favor.`;
+
+        window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
+        fecharModal('modalFranqueado');
+
+        alert('Seu interesse foi registrado! Entraremos em contato em breve.');
+});
+
+    // Formulário de Contato
+    document.getElementById('formContato').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const dados = new FormData(this);
+
+        let mensagem = `Nova mensagem do site NOSSO MERCADINHO OLYPRESS:%0A%0A`;
+        mensagem += `*Nome:* ${encodeURIComponent(dados.get('nome'))}%0A`;
+        mensagem += `*E-mail:* ${encodeURIComponent(dados.get('email'))}%0A`;
+        if (dados.get('telefone')) {
+            mensagem += `*Telefone:* ${encodeURIComponent(dados.get('telefone'))}%0A`;
+     
+   }
+        mensagem += `*Assunto:* ${encodeURIComponent(dados.get('assunto'))}%0A`;
+        mensagem += `*Mensagem:* ${encodeURIComponent(dados.get('mensagem'))}%0A`;
+
+        window.open(`https://wa.me/5519996600929?text=${mensagem}`, '_blank');
+
+        alert('Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.');
+        this.reset();
     });
-
-    // Inicialização do Slick Carousel
-    $(document).ready(() => $('.slick-carousel').slick({
-        infinite: true, slidesToShow: 3, slidesToScroll: 1, autoplay: true,
-        autoplaySpeed: 3000, dots: true, arrows: true,
-        responsive: [{ breakpoint: 1024, settings: { slidesToShow: 2 } }, { breakpoint: 768, settings: { slidesToShow: 1 } }]
-    }));
-
-    // Chart.js
-    const ctx = document.getElementById('crescimentoChart')?.getContext('2d');
-    if (ctx) {
-        new Chart(ctx, {
-            type: 'line', data: { labels: ['2023', '2024', '2025 (previsão)'], datasets: [{ label: 'Unidades em operação', data: [5, 18, 52], borderColor: '#f7931e', backgroundColor: 'rgba(247, 147, 30, 0.2)', tension: 0.3, fill: true }] },
-            options: { responsive: true, plugins: { legend: { display: false } }, animation: { duration: 2000 }, scales: { y: { beginAtZero: true }, x: { grid: { display: false } } } }
+// Inicialização do Slick Carousel
+    $(document).ready(function () {
+        $('.slick-carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+    
+        arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                    
+    slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                  
+  breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+      
+          }
+            ]
         });
-    }
+
+        // Animação para o ícone do FAQ
+        document.querySelectorAll('.faq-item summary').forEach(summary => {
+            summary.addEventListener('click', () => {
+                const icon = summary.querySelector('i');
+                const detail = summary.parentElement;
+                
+                // Workaround for details not closing when another opens
+                if (!detail.open) {
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item.open && item !== detail) {
+                            item.open = false;
+                            const otherIcon = item.querySelector('i');
+                            otherIcon.classList.remove('fa-chevron-up');
+                            otherIcon.classList.add('fa-chevron-down');
+                        }
+                    });
+                }
+                
+                setTimeout(() => {
+                    if (detail.open) {
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                }, 0);
+            });
+        });
+    });
+// Chart.js
+    const ctx = document.getElementById('crescimentoChart').getContext('2d');
+    const crescimentoChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['2022', '2023', '2024', '2025 (proj.)'],
+            datasets: [{
+                label: 'Unidades em operação e contato',
+                data: [5, 
+18, 37, 52],
+                borderColor: '#f7931e',
+                backgroundColor: 'rgba(247, 147, 30, 0.2)',
+                tension: 0.3,
+                fill: true,
+                pointRadius: 5,
+          
+      pointHoverRadius: 7
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {display: false},
+                tooltip: {
+   
+                 enabled: true,
+                    backgroundColor: '#f7931e',
+                    titleColor: '#fff',
+                    bodyColor: '#fff',
+                   
+ borderColor: '#fff',
+                    borderWidth: 1
+                }
+            },
+            animation: {
+                duration: 2000,
+                easing: 'easeOutBounce'
+  
+          },
+            scales: {
+                y: {beginAtZero: true, ticks: {precision: 0}},
+                x: {
+                    grid: {
+                  
+      display: false // Remove as linhas de grade do eixo X
+                    }
+                }
+            }
+        }
+    });
 </script>
 </body>
 </html>
