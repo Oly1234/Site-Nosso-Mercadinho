@@ -26,13 +26,14 @@
       "@id": "https://nossomercadinhoolypress.com.br/",
       "url": "https://nossomercadinhoolypress.com.br/",
       "telephone": "+5519983569940",
-      "description": "Mercado 100% autônomo para condomínios em Piracicaba. Funcionamento 24h, instalação gratuita e mix de produtos personalizado.",
+      "description": "Mercado 100% autônomo para condomínios em Piracicaba. Funcionamento 24h, instalação gratuita (sem custos para o condomínio e moradores), e mix de produtos personalizado.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Piracicaba",
         "addressRegion": "SP",
         "addressCountry": "BR"
       },
+      "foundingDate": "2023",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -141,7 +142,7 @@
             color: inherit;
         }
 
-        img {
+        img, svg {
             max-width: 100%;
             height: auto;
             display: block;
@@ -272,7 +273,7 @@
             height: 100%;
             background: url('intern.jpeg') center/cover no-repeat;
             opacity: 0.15;
-            animation: panBackground 30s linear infinite alternate; /* Novo: Animação de fundo */
+            animation: panBackground 30s linear infinite alternate;
         }
 
         @keyframes panBackground {
@@ -295,14 +296,14 @@
             font-size: 2.8rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            color: var(--preto); /* Alterado para preto */
+            color: var(--preto);
         }
 
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 30px;
             font-weight: 500;
-            color: var(--preto); /* Alterado para preto */
+            color: var(--preto);
         }
 
         .hero-buttons {
@@ -398,7 +399,7 @@
             align-items: center;
             border-left: 5px solid var(--laranja);
             border-right: 5px solid var(--laranja);
-            box-shadow: 0 0 15px var(--laranja-claro); /* Novo: efeito de luz */
+            box-shadow: 0 0 15px var(--laranja-claro);
         }
 
         .banner-led p {
@@ -439,11 +440,11 @@
             transition: all 0.3s ease;
             text-align: center;
             border-top: 4px solid var(--laranja);
-            position: relative; /* Adicionado para o efeito de "brilho" */
+            position: relative;
             overflow: hidden;
         }
 
-        .card::before { /* Novo: Efeito de brilho */
+        .card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -459,8 +460,8 @@
         }
 
         .card:hover {
-            transform: translateY(-10px) scale(1.02); /* Escala adicionada no hover */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 25px var(--laranja); /* Brilho no hover */
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 25px var(--laranja);
         }
 
         .card i {
@@ -471,7 +472,7 @@
         }
 
         .card:hover i {
-            transform: scale(1.1) rotate(5deg); /* Animação do ícone no hover */
+            transform: scale(1.1) rotate(5deg);
         }
 
         .card h3 {
@@ -480,7 +481,7 @@
         }
 
         /* ===========================
-           Seção Indicadores (Refatorado)
+           Seção Indicadores
            =========================== */
         .indicadores {
             background: #111;
@@ -514,7 +515,7 @@
         }
 
         /* ===========================
-           Seção Mídia (Refatorado)
+           Seção Mídia
            =========================== */
         .midia {
             background-color: #111;
@@ -546,6 +547,7 @@
             max-width: 720px;
             display: block;
             margin: 20px auto;
+            border-radius: 10px;
         }
         .midia .full-width-image {
             width: 100%;
@@ -752,11 +754,10 @@
             gap: 15px;
         }
 
-        .depoimento-autor img {
+        .depoimento-autor .avatar-svg {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            object-fit: cover;
             border: 2px solid var(--laranja);
         }
 
@@ -887,7 +888,7 @@
         }
         
         /* ===========================
-           Seção FAQ (Refatorado)
+           Seção FAQ
            =========================== */
         .faq {
             background-color: var(--cinza-claro); 
@@ -942,7 +943,7 @@
         }
 
         /* ===========================
-           Seção Gráfico (Refatorado)
+           Seção Gráfico
            =========================== */
         .grafico-crescimento {
             background:#fff;
@@ -1158,23 +1159,6 @@
             }
         }
 
-        #preloader {
-            background-color: #111;
-            color: #f7931e;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: sans-serif;
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-        }
-
         /* ===========================
            Responsividade
            =========================== */
@@ -1222,7 +1206,7 @@
 
             .mobile-menu {
                 position: fixed;
-                top: 80px; /* Ajuste para a altura da nav */
+                top: 70px; /* Altura da navegação */
                 left: 0;
                 width: 100%;
                 background-color: var(--cinza-escuro);
@@ -1282,8 +1266,6 @@
     </style>
 </head>
 <body>
-
-<div id="preloader">NOSSO MERCADINHO OLYPRESS</div>
 
 <header>
     <img alt="Logo Nosso Mercadinho Olypress com fundo transparente" src="logo.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
@@ -1357,8 +1339,8 @@
     <h2>Nossa presença em números</h2>
     <div class="indicadores-grid">
         <div class="stat" data-aos="fade-right" data-aos-delay="100">
-            <div class="count" data-target="4">0</div>
-            <p>anos no mercado</p>
+            <div class="count" data-target="2023">0</div>
+            <p>Início das operações</p>
         </div>
         <div class="stat" data-aos="fade-right" data-aos-delay="200">
             <div class="count" data-target="900">0</div>
@@ -1513,7 +1495,10 @@
                     "Desde que instalaram o mercadinho no nosso condomínio, a vida dos moradores ficou muito mais prática. Os produtos são de qualidade e o atendimento é excelente."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Foto da cliente Maria Silva" src="https://via.placeholder.com/50/f7931e/000000?Text=MS"/>
+                    <svg class="avatar-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar de Maria Silva">
+                        <circle cx="50" cy="50" r="50" fill="#f7931e"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="40px" font-family="Inter, sans-serif" dy=".3em">MS</text>
+                    </svg>
                     <div class="autor-info">
                         <h4>Maria Silva</h4>
                         <p>Síndica - Condomínio Solar das Flores</p>
@@ -1525,7 +1510,10 @@
                     "Como morador, adoro a praticidade de poder comprar itens básicos a qualquer hora. O sistema é muito intuitivo e nunca tive problemas."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Foto do cliente Carlos Mendes" src="https://via.placeholder.com/50/f7931e/000000?Text=CM"/>
+                    <svg class="avatar-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar de Carlos Mendes">
+                        <circle cx="50" cy="50" r="50" fill="#f7931e"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="40px" font-family="Inter, sans-serif" dy=".3em">CM</text>
+                    </svg>
                     <div class="autor-info">
                         <h4>Carlos Mendes</h4>
                         <p>Morador - Residencial Green Valley</p>
@@ -1537,7 +1525,10 @@
                     "Ser franqueado da NOSSO MERCADINHO OLYPRESS foi a melhor decisão que tomei. O suporte da franqueadora é excelente e o negócio tem um retorno muito bom."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Foto da franqueada Ana Paula" src="https://via.placeholder.com/50/f7931e/000000?Text=AP"/>
+                     <svg class="avatar-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar de Ana Paula">
+                        <circle cx="50" cy="50" r="50" fill="#f7931e"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="40px" font-family="Inter, sans-serif" dy=".3em">AP</text>
+                    </svg>
                     <div class="autor-info">
                         <h4>Ana Paula</h4>
                         <p>Franqueada - Zona Norte</p>
@@ -1549,7 +1540,10 @@
                     "A praticidade de ter tudo no térreo mudou nossa rotina."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Foto da moradora Denise" src="https://via.placeholder.com/50/f7931e/000000?Text=D"/>
+                    <svg class="avatar-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar de Denise">
+                        <circle cx="50" cy="50" r="50" fill="#f7931e"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="50px" font-family="Inter, sans-serif" dy=".3em">D</text>
+                    </svg>
                     <div class="autor-info">
                         <h4>Denise</h4>
                         <p>Moradora</p>
@@ -1561,7 +1555,10 @@
                     "Tivemos aumento na valorização do imóvel após a instalação."
                 </div>
                 <div class="depoimento-autor">
-                    <img alt="Avatar da Gestão do Condomínio Esmeralda" src="https://via.placeholder.com/50/f7931e/000000?Text=GE"/>
+                    <svg class="avatar-svg" width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar da Gestão Esmeralda">
+                        <circle cx="50" cy="50" r="50" fill="#f7931e"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="#000000" font-size="40px" font-family="Inter, sans-serif" dy=".3em">GE</text>
+                    </svg>
                     <div class="autor-info">
                         <h4>Gestão</h4>
                         <p>Cond. Esmeralda</p>
@@ -1834,14 +1831,6 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-    // Preloader
-    window.addEventListener('load', function () {
-        const loader = document.getElementById('preloader');
-        loader.style.transition = 'opacity 0.8s';
-        loader.style.opacity = 0;
-        setTimeout(() => loader.style.display = 'none', 800);
-    });
-
     // Contador Animado
     const counters = document.querySelectorAll('.count');
     const observer = new IntersectionObserver(entries => {
@@ -1888,7 +1877,7 @@
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     const navHeight = document.querySelector('nav').offsetHeight;
-    mobileMenu.style.top = navHeight + 'px'; // Ajuste dinâmico da posição do menu
+    mobileMenu.style.top = navHeight + 'px';
 
     mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('active');
