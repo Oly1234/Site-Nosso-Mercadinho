@@ -56,8 +56,10 @@
     document.querySelectorAll('.steps span').forEach(span => span.classList.toggle('active', span.dataset.step === name));
     $('visitor').classList.toggle('at-checkout', name !== 'shop');
     $('scene-status').textContent = name === 'shop' ? 'PORTAS ABERTAS · 24H' : name === 'scan' ? 'CAIXA EM USO' : 'VISITA CONCLUÍDA';
+    $('scene-phase').textContent = name === 'shop' ? '01 / 03 · EXPLORE O MERCADO' : name === 'scan' ? '02 / 03 · PASSE PELO CAIXA' : '03 / 03 · SUA VISITA';
+    $('scene-instruction').textContent = name === 'shop' ? 'TOQUE NOS PRODUTOS ↓' : name === 'scan' ? 'ESCANEIE SUA SACOLA →' : 'VOLTE SEMPRE ✦';
     if (name === 'scan') renderScan();
-    if (name === 'finish') { $('finish-count').textContent = String(state.cart.length); $('monitor-value').textContent = 'OBRIGADO!'; $('monitor-hint').textContent = 'Volte sempre'; }
+    if (name === 'finish') { $('finish-count').textContent = String(state.cart.length); $('finish-noun').textContent = state.cart.length === 1 ? 'produto' : 'produtos'; $('monitor-value').textContent = 'OBRIGADO!'; $('monitor-hint').textContent = 'Volte sempre'; }
   }
   function renderScan() {
     const list = $('scan-list'); list.replaceChildren();

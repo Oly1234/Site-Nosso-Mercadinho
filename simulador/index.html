@@ -34,13 +34,13 @@
           <div class="visitor" id="visitor" aria-label="Visitante animado"><div class="visitor-head"></div><div class="visitor-body"><span class="visitor-bag">✦</span></div><div class="visitor-legs"></div></div>
           <div class="floor-line" aria-hidden="true"></div>
         </div>
-        <div class="scene-footer"><span>01 / 03 · EXPLORE O MERCADO</span><span>TOQUE NOS PRODUTOS ↓</span></div>
+        <div class="scene-footer"><span id="scene-phase">01 / 03 · EXPLORE O MERCADO</span><span id="scene-instruction">TOQUE NOS PRODUTOS ↓</span></div>
       </section>
       <section class="experience-panel" aria-label="Sua compra demonstrativa">
         <div class="steps"><span class="active" data-step="shop">01 ESCOLHER</span><span data-step="scan">02 ESCANEAR</span><span data-step="finish">03 CONCLUIR</span></div>
         <div class="tab active" id="shop-tab"><div class="panel-heading"><span class="eyebrow">PRATELEIRA INTERATIVA</span><h2>O que você levaria hoje?</h2><p id="catalog-note">Carregando uma amostra do catálogo...</p></div><div class="product-grid" id="product-grid"><div class="loading">Preparando a experiência<span class="dots">...</span></div></div><div class="panel-bottom"><span id="cart-count">0 itens na sacola</span><button class="primary" id="go-checkout" disabled>Ir ao caixa <span>→</span></button></div></div>
         <div class="tab" id="scan-tab"><div class="panel-heading"><span class="eyebrow">CAIXA AUTÔNOMO</span><h2>Confira sua sacola.</h2><p>Toque em cada item para simular a leitura no caixa.</p></div><div class="scan-list" id="scan-list"></div><div class="panel-bottom"><button class="ghost" id="back-shop">← Voltar</button><button class="primary" id="go-finish" disabled>Concluir simulação <span>→</span></button></div></div>
-        <div class="tab" id="finish-tab"><div class="finish-mark">✓</div><span class="eyebrow">MISSÃO CONCLUÍDA</span><h2>Viu como é simples?</h2><p>Você escolheu <strong id="finish-count">0</strong> produtos e experimentou o fluxo de compra. Esta foi apenas uma simulação: nenhum pedido ou pagamento foi realizado.</p><div class="finish-actions"><button class="primary" id="restart">Experimentar novamente ↻</button><a class="ghost" href="../#contato">Quero no meu condomínio ↗</a></div></div>
+        <div class="tab" id="finish-tab"><div class="finish-mark">✓</div><span class="eyebrow">MISSÃO CONCLUÍDA</span><h2>Viu como é simples?</h2><p>Você escolheu <strong id="finish-count">0</strong> <span id="finish-noun">produtos</span> e experimentou o fluxo de compra. Esta foi apenas uma simulação: nenhum pedido ou pagamento foi realizado.</p><div class="finish-actions"><button class="primary" id="restart">Experimentar novamente ↻</button><a class="ghost" href="../#contato">Quero no meu condomínio ↗</a></div></div>
       </section>
     </div>
     <div class="truth"><strong>EXPERIÊNCIA DEMONSTRATIVA</strong><span>Os produtos são uma amostra do catálogo integrado; variedade e disponibilidade dependem da unidade. Este simulador não mostra preços, não reserva itens e não processa pagamentos.</span></div>
