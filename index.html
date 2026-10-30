@@ -1386,7 +1386,7 @@
     <link rel="stylesheet" href="experience.css"/>
     <link rel="stylesheet" href="live.css"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <link rel="stylesheet" href="cinematic.css"/>
+    <link rel="stylesheet" href="cinematic.css"/><link rel="stylesheet" href="site-v5.css"/>
 </head>
 <body>
     <!-- Tela de Carregamento -->
@@ -1491,8 +1491,8 @@
         </div>
     </section>
     
-    <section class="product-showcase"><div class="container"><p class="new-kicker">ESCOLHAS PARA O DIA A DIA</p><h2>Da rotina ao improviso, sempre por perto.</h2><p>Uma amostra visual do catálogo da rede. A seleção, os preços e a disponibilidade de cada produto variam conforme a unidade.</p><div class="product-rail"><article><img src="produto-coca-cola.jpg" alt="Refrigerante Coca-Cola" loading="lazy"><span>Bebidas</span></article><article><img src="produto-arroz.jpg" alt="Pacote de arroz" loading="lazy"><span>Despensa</span></article><article><img src="produto-chocolate.jpg" alt="Chocolate" loading="lazy"><span>Para uma pausa</span></article><article><img src="produto-leite.jpg" alt="Leite integral" loading="lazy"><span>Essenciais</span></article></div></div></section>
-    <section class="new-social" id="novidades"><div class="container"><p class="new-kicker">DO NOSSO ESTÚDIO PARA VOCÊ</p><h2>Novidades criadas pela nossa equipe, direto da fila de publicações.</h2><p>Esta vitrine mostra imagens que já foram publicadas no Instagram oficial. Rascunhos e ofertas com preço não são exibidos aqui.</p><div class="live-feed" id="live-feed" aria-live="polite"><p>Carregando publicações...</p></div><a class="btn" href="https://www.instagram.com/olypressnossomercadinho/" target="_blank" rel="noopener noreferrer">Acompanhar no Instagram ↗</a></div></section>
+    <section class="product-showcase" id="produtos"><div class="container"><p class="new-kicker">VITRINE VIVA</p><h2>Seu próximo favorito pode estar aqui.</h2><p>Mais de 2.000 produtos no catálogo da rede. Explore abaixo uma seleção da API pública; cada unidade tem seu próprio mix, preços e disponibilidade.</p><div class="product-wall-site" id="product-wall-site" aria-live="polite"><p>Buscando produtos do catálogo...</p></div><a class="btn product-cta" href="simulador/">Entrar e escolher produtos ↗</a></div></section>
+    <section class="care-section"><div class="container"><div class="care-lead"><p class="new-kicker">GENTE QUE CUIDA</p><h2>A tecnologia abre as portas. Nossa equipe acompanha cada dia.</h2><p>Na operação própria, unimos ferramentas de acompanhamento, reposições diárias e pessoas disponíveis para ouvir moradores e gestores. Quando surgir uma dúvida, fale com a gente.</p><a class="btn" href="https://wa.me/5519996600929?text=Ol%C3%A1%2C%20equipe%20do%20Nosso%20Mercadinho.%20Quero%20conversar%20sobre%20o%20mercadinho." target="_blank" rel="noopener noreferrer">Chamar a equipe agora ↗</a></div><div class="care-grid"><article><strong>7/7</strong><h3>Equipe dedicada</h3><p>Acompanhamento diário da operação própria, inclusive aos fins de semana.</p></article><article><strong>DIÁRIO</strong><h3>Reposição presente</h3><p>O mix é acompanhado e reabastecido conforme a demanda de cada unidade.</p></article><article><strong>HUMANO</strong><h3>Conversa de verdade</h3><p>Atendimento para moradores, síndicos e administradoras, com encaminhamento à equipe.</p></article><article><strong>ZERO PERDA</strong><h3>Canal operacional integrado</h3><p>Ocorrências e dúvidas podem ser acompanhadas no fluxo de suporte, com revisão humana quando necessário.</p></article></div></div></section><section class="new-social" id="novidades"><div class="container"><p class="new-kicker">DO NOSSO ESTÚDIO PARA VOCÊ</p><h2>Novidades criadas pela nossa equipe, direto da fila de publicações.</h2><p>Esta vitrine mostra imagens que já foram publicadas no Instagram oficial. Rascunhos e ofertas com preço não são exibidos aqui.</p><div class="live-feed" id="live-feed" aria-live="polite"><p>Carregando publicações...</p></div><a class="btn" href="https://www.instagram.com/olypressnossomercadinho/" target="_blank" rel="noopener noreferrer">Acompanhar no Instagram ↗</a></div></section>
     <section class="destaque">
         <div class="container">
             <div class="destaque-content">
@@ -1521,7 +1521,7 @@
     <section class="simulador" id="simulador">
         <div class="container">
             <h2>Entre no Nosso Mercadinho virtual </h2>
-            <p>Explore uma compra demonstrativa com produtos do catálogo integrado, caixa interativo e novidades da nossa equipe na TV do mercadinho. A experiência não mostra preços nem realiza pagamentos.</p>
+            <p>Explore a unidade em um panorama interativo, toque em produtos reais da vitrine integrada e experimente a passagem no caixa. A visita não realiza pedidos nem pagamentos.</p>
             <div class="simulador-embed">
                 <iframe loading="lazy" src="simulador/" title="Simulador de Compras NOSSO MERCADINHO"></iframe>
                 <p><a class="btn" href="simulador/" target="_blank" rel="noopener noreferrer">Viver a experiência em tela cheia ↗</a></p>
@@ -1572,10 +1572,9 @@
         </div>
     </section>
 
-    <section class="franquias" id="franquia"><div class="container"><p class="new-kicker">FRANQUIAS NOSSO MERCADINHO</p><h2>Um projeto para cada espaço.</h2><p>Oferecemos modelos Clean, Standard e Premium. O formato, investimento, taxa de franquia, royalties e demais condições são definidos em proposta atual, após analisar o condomínio, a estrutura necessária e os preços de mercado. Projeções de faturamento ou retorno não são garantias.</p><div class="new-models"><article><span>01</span><h3>Clean</h3><p>Estrutura compacta para espaços adequados.</p></article><article><span>02</span><h3>Standard</h3><p>Formato modular para uma operação mais ampla.</p></article><article><span>03</span><h3>Premium</h3><p>Projeto ampliado para empreendimentos maiores.</p></article></div><button class="btn" onclick="abrirModal('modalFranqueado')">Converse sobre franquias ↗</button></div></section>
+    <section class="franquias" id="franquia"><div class="container"><p class="new-kicker">FRANQUIAS NOSSO MERCADINHO</p><h2>Modelos para construir com você.</h2><p>Investimentos de referência do material institucional anterior. O valor atual de cada formato, taxa, royalties e escopo dependem da análise do projeto, das condições de mercado e de proposta comercial vigente.</p><div class="new-models franchise-v5"><article><span>01 / COMPACTO</span><h3>Clean</h3><strong>R$ 29.900</strong><p>Referência anterior de investimento total, incluindo taxa de franquia então prevista de R$ 15.000.</p></article><article><span>02 / MODULAR</span><h3>Standard</h3><strong>R$ 70.200</strong><p>Referência anterior de investimento total, incluindo taxa de franquia então prevista de R$ 20.000.</p></article><article><span>03 / AMPLIADO</span><h3>Premium</h3><strong>R$ 107.400</strong><p>Referência anterior de investimento total, incluindo taxa de franquia então prevista de R$ 30.000.</p></article></div><p class="franchise-note">Esses números são referências históricas, não oferta ou preço vigente. Não há garantia de faturamento, rentabilidade ou prazo de retorno. Enviamos condições atualizadas após estudar o local e o formato.</p><button class="btn" onclick="abrirModal('modalFranqueado')">Pedir proposta atual ↗</button></div></section>
+    <section class="brand-section"><div class="container"><div class="brand-copy"><p class="new-kicker">ENCONTROS NA PRATELEIRA</p><h2>Marcas que fazem parte da cena.</h2><p>Algumas marcas visíveis nas fotos das nossas unidades. A presença de um produto varia por local e não indica parceria comercial exclusiva.</p></div><div class="brand-hero"><img src="brand-coca.jpg" alt="Interior real com expositores de marcas vendidas no Nosso Mercadinho" loading="lazy"><div class="brand-tags"><span>Coca-Cola</span><span>Rochinha</span><span>Pragelo</span></div></div></div></section>
 
-
-    
     <section class="contato" id="contato">
         <div class="container">
             <h2>Entre em Contato </h2>
@@ -2188,7 +2187,7 @@
     <!-- Confetti library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <canvas id="confetti-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:100000;"></canvas>
-<script src="experience.js" defer></script>
+<script src="experience.js" defer></script><script src="site-v5.js" defer></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
 <script src="locations.js" defer></script>
 </body>
