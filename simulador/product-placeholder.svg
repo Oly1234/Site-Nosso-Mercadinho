@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Produto do catálogo">
- <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#dceacb"/><stop offset="1" stop-color="#f6dfab"/></linearGradient></defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-label="Imagem indisponível do produto">
+ <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#171717"/><stop offset="1" stop-color="#302015"/></linearGradient><linearGradient id="bag" x2="1" y2="1"><stop stop-color="#ffbd57"/><stop offset="1" stop-color="#f48726"/></linearGradient></defs>
  <rect width="320" height="200" fill="url(#g)"/>
- <path d="M105 75h110l-9 84H114z" fill="#264b31" opacity=".92"/>
- <path d="M135 82V67c0-14 11-25 25-25s25 11 25 25v15" fill="none" stroke="#264b31" stroke-width="12" stroke-linecap="round"/>
- <path d="M152 109l8-12 8 12-8 12z" fill="#f3bf65"/>
- <text x="160" y="184" fill="#264b31" font-size="13" font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle">NOSSO MERCADINHO</text>
+ <path d="M0 0h320" stroke="#f48726" stroke-width="5"/>
+ <path d="M113 75h94l-7 78h-80z" fill="url(#bag)"/>
+ <path d="M137 77V64c0-13 10-23 23-23s23 10 23 23v13" fill="none" stroke="#ffc967" stroke-width="9" stroke-linecap="round"/>
+ <path d="M142 113c8-15 14-15 18 0 4 15 10 15 18 0" fill="none" stroke="#171717" stroke-width="7" stroke-linecap="round"/>
+ <text x="160" y="180" fill="#fff3d9" font-size="12" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="1" text-anchor="middle">NOSSO MERCADINHO</text>
 </svg>
