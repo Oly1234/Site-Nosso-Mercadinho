@@ -8,6 +8,11 @@
   const safePost = value => {
     try { const url = new URL(value); return url.protocol === 'https:' && ['www.instagram.com','instagram.com'].includes(url.hostname) ? url.href : null; } catch { return null; }
   };
+  function productImage(product) {
+    const image = document.createElement('img'); image.src = product.image; image.alt = ''; image.loading = 'lazy';
+    image.addEventListener('error', () => { image.onerror = null; image.src = 'product-placeholder.svg'; }, {once:true});
+    return image;
+  }
   async function getJson(path) {
     const response = await fetch(`${API}${path}`, {signal: AbortSignal.timeout(9000)});
     if (!response.ok) throw Error('unavailable');
@@ -24,7 +29,7 @@
     state.products.forEach(product => {
       const button = document.createElement('button'); button.type = 'button'; button.className = 'product';
       button.setAttribute('aria-pressed', String(state.cart.some(item => item.id === product.id)));
-      const image = document.createElement('img'); image.src = product.image; image.alt = ''; image.loading = 'lazy';
+      const image = productImage(product);
       const name = document.createElement('strong'); name.textContent = product.name;
       const hint = document.createElement('small'); hint.textContent = 'Toque para adicionar';
       button.append(image, name, hint);
@@ -42,7 +47,7 @@
       const node = $(id); node.replaceChildren();
       state.products.slice(shelf * 6, shelf * 6 + 6).forEach((product, index) => {
         const card = document.createElement('div'); card.className = 'mini-product'; card.style.animationDelay = `${index * 90}ms`;
-        const image = document.createElement('img'); image.src = product.image; image.alt = ''; image.loading = 'lazy'; card.append(image); node.append(card);
+        card.append(productImage(product)); node.append(card);
       });
     });
   }
@@ -60,7 +65,7 @@
       const button = document.createElement('button'); button.type = 'button'; button.className = 'scan-item';
       button.classList.toggle('scanned', state.scanned.has(product.id));
       button.setAttribute('aria-label', `${state.scanned.has(product.id) ? 'Lido: ' : 'Escanear: '}${product.name}`);
-      const image = document.createElement('img'); image.src = product.image; image.alt = '';
+      const image = productImage(product);
       const name = document.createElement('span'); name.textContent = product.name;
       const mark = document.createElement('b'); mark.textContent = state.scanned.has(product.id) ? '✓' : '◎';
       button.append(image, name, mark);
