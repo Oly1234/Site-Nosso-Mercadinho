@@ -32,3 +32,24 @@
     counters.forEach(el=>observer.observe(el));
   }
 })();
+
+(() => {
+  const root = document.querySelector('#live-feed');
+  if (!root) return;
+  fetch('https://adm-olypres.web.app/api/community/public/site/posts', {signal: AbortSignal.timeout(10000)})
+    .then(response => {if (!response.ok) throw Error('feed unavailable'); return response.json();})
+    .then(data => {
+      root.replaceChildren();
+      const posts = Array.isArray(data.posts) ? data.posts.slice(0, 6) : [];
+      if (!posts.length) {root.textContent = 'As próximas publicações aparecerão aqui. Enquanto isso, acompanhe nosso Instagram oficial.'; return;}
+      for (const post of posts) {
+        if (!/^https:\/\/(?:www\.)?instagram\.com\//.test(post.permalink || '') || !/^https:\/\/adm-olypres\.web\.app\/api\/community\/public\/site\/posts\//.test(post.image || '')) continue;
+        const a = document.createElement('a'), img = document.createElement('img'), span = document.createElement('span');
+        a.href = post.permalink; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.className = 'live-post';
+        img.src = post.image; img.alt = 'Publicação do Nosso Mercadinho no Instagram'; img.loading = 'lazy';
+        span.textContent = 'Ver publicação ↗'; a.append(img, span); root.append(a);
+      }
+      if (!root.children.length) root.textContent = 'Acompanhe as novidades no Instagram oficial.';
+    })
+    .catch(() => {root.textContent = 'A vitrine está sendo atualizada. Veja as novidades no Instagram oficial.';});
+})();
