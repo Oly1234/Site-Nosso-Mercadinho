@@ -1383,6 +1383,7 @@
         }
     </style>
     <link rel="stylesheet" href="modern.css"/>
+    <link rel="stylesheet" href="experience.css"/>
 </head>
 <body>
     <!-- Tela de Carregamento -->
@@ -1394,13 +1395,11 @@
         </div>
     </div>
 
-    <header>
-        <img alt="Logo Nosso Mercadinho" src="logo-novo.png" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
-    </header>
+
     
     <nav>
         <div class="nav-container container">
-            <a class="logo" href="#" style="margin: 0 auto;"></a>
+            <a class="logo" href="#inicio" aria-label="Nosso Mercadinho, início"><img src="logo-novo.png" alt="Nosso Mercadinho"></a>
             <div class="nav-links">
                 <a href="#sobre">Sobre <span class="emoji">ℹ️</span></a>
                 <a href="#simulador">Simulador <span class="emoji">🛒</span></a>
@@ -1421,9 +1420,9 @@
         </div>
     </nav>
     
-    <header class="hero">
+    <header class="hero" id="inicio">
         <div class="hero-content container">
-            <h1>Conveniência 24h no Seu Condomínio <span class="emoji">🛒</span></h1>
+            <h1><span class="hero-line">O essencial,</span> <span class="hero-line highlight">mais perto de casa.</span></h1>
             <p>Conveniência 24h no condomínio, com equipe dedicada, reposições diárias e uma seleção feita para os moradores.</p>
             <div class="hero-buttons">
                 <a class="btn btn-cta tooltip" href="#condominio">Quero no meu condomínio <span class="emoji">👍</span>
@@ -1466,7 +1465,7 @@
         </div>
     </section>
     
-    <section id="indicadores" class="new-indicators"><div class="container"><p class="new-kicker">NOSSA OPERAÇÃO</p><h2>Mais perto de casa. Mais útil todos os dias.</h2><div class="new-stats"><div><strong>24h</strong><span>conveniência</span></div><div><strong>2.000+</strong><span>produtos no catálogo da rede</span></div><div><strong>Diária</strong><span>reposição na operação própria</span></div></div><p class="new-note">A seleção e a disponibilidade variam por unidade. Confira os dados atuais antes de comprar.</p></div></section>
+    <section id="indicadores" class="new-indicators"><div class="container"><p class="new-kicker">NOSSA OPERAÇÃO</p><h2>Mais perto de casa. Mais útil todos os dias.</h2><div class="new-stats" data-reveal><div><strong data-count="24" data-suffix="h">0</strong><span>conveniência</span></div><div><strong data-count="2000" data-suffix="+">0</strong><span>produtos no catálogo da rede</span></div><div><strong>Diária</strong><span>reposição na operação própria</span></div></div><p class="new-note">A seleção e a disponibilidade variam por unidade. Confira os dados atuais antes de comprar.</p></div></section>
     
     <section class="midia" style="background-color:#111; padding:60px 20px;">
         <div class="container">
@@ -1489,6 +1488,7 @@
         </div>
     </section>
     
+    <section class="product-showcase"><div class="container"><p class="new-kicker">ESCOLHAS PARA O DIA A DIA</p><h2>Da rotina ao improviso, sempre por perto.</h2><p>Uma amostra visual do catálogo da rede. A seleção, os preços e a disponibilidade de cada produto variam conforme a unidade.</p><div class="product-rail"><article><img src="produto-coca-cola.jpg" alt="Refrigerante Coca-Cola" loading="lazy"><span>Bebidas</span></article><article><img src="produto-arroz.jpg" alt="Pacote de arroz" loading="lazy"><span>Despensa</span></article><article><img src="produto-chocolate.jpg" alt="Chocolate" loading="lazy"><span>Para uma pausa</span></article><article><img src="produto-leite.jpg" alt="Leite integral" loading="lazy"><span>Essenciais</span></article></div></div></section>
     <section class="new-social"><div class="container"><p class="new-kicker">NOVIDADES E OFERTAS</p><h2>O que acontece no Mercadinho também está no Instagram.</h2><p>Acompanhe conteúdos e ofertas das unidades. Preço e disponibilidade variam por condomínio e devem ser confirmados antes da compra.</p><a class="btn" href="https://www.instagram.com/olypressnossomercadinho/" target="_blank" rel="noopener noreferrer">Ver Instagram ↗</a></div></section>
     <section class="destaque">
         <div class="container">
@@ -1819,7 +1819,7 @@
         </div>
     </div>
     
-    <a class="whatsapp-float" href="https://wa.me/5519996600929" target="_blank">
+    <a class="whatsapp-float" href="https://wa.me/5519996600929?text=Ol%C3%A1%2C%20equipe%20do%20Nosso%20Mercadinho!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a equipe no WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     
@@ -2181,5 +2181,6 @@
     <!-- Confetti library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <canvas id="confetti-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:100000;"></canvas>
+<script src="experience.js" defer></script>
 </body>
 </html>
