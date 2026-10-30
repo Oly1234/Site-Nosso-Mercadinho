@@ -1385,11 +1385,13 @@
     <link rel="stylesheet" href="modern.css"/>
     <link rel="stylesheet" href="experience.css"/>
     <link rel="stylesheet" href="live.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="cinematic.css"/>
 </head>
 <body>
     <!-- Tela de Carregamento -->
     <div id="preloader">
-        <div class="loading-cart">🛒</div>
+        <div class="loading-logo"><img src="logo-novo.png" alt=""></div>
         <h3 style="color: white; margin-bottom: 20px;">Carregando Nosso Mercadinho...</h3>
         <div class="preloader-progress">
             <div class="preloader-progress-bar"></div>
@@ -1402,65 +1404,64 @@
         <div class="nav-container container">
             <a class="logo" href="#inicio" aria-label="Nosso Mercadinho, início"><img src="logo-novo.png" alt="Nosso Mercadinho"></a>
             <div class="nav-links">
-                <a href="#sobre">Sobre <span class="emoji">ℹ️</span></a>
-                <a href="#simulador">Simulador <span class="emoji">🛒</span></a>
-                <a href="#unidades">Unidades <span class="emoji">⌖</span></a>
-                <a href="#condominio">Condomínios <span class="emoji">🏢</span></a>
-                <a href="#franquia">Franquias <span class="emoji">💼</span></a>
-                <a href="#contato">Contato <span class="emoji">📞</span></a>
+                <a href="#sobre">Sobre </a>
+                <a href="#simulador">Simulador </a>
+                <a href="#unidades">Unidades </a>
+                <a href="#condominio">Condomínios </a>
+                <a href="#franquia">Franquias </a>
+                <a href="#contato">Contato </a>
             </div>
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         <div class="mobile-menu">
-            <a href="#sobre">Sobre <span class="emoji">ℹ️</span></a>
-            <a href="#simulador">Simulador <span class="emoji">🛒</span></a>
-            <a href="#condominio">Condomínios <span class="emoji">🏢</span></a>
-            <a href="#franquia">Franquias <span class="emoji">💼</span></a>
-            <a href="#contato">Contato <span class="emoji">📞</span></a>
+            <a href="#sobre">Sobre </a>
+            <a href="#simulador">Simulador </a>
+            <a href="#condominio">Condomínios </a>
+            <a href="#franquia">Franquias </a>
+            <a href="#contato">Contato </a>
         </div>
     </nav>
     
     <header class="hero" id="inicio">
+        <div class="hero-picture" aria-hidden="true"><img src="hero-store.jpg" alt="" fetchpriority="high"></div>
         <div class="hero-content container">
-            <h1><span class="hero-line">O essencial,</span> <span class="hero-line highlight">mais perto de casa.</span></h1>
-            <p>Conveniência 24h no condomínio, com equipe dedicada, reposições diárias e uma seleção feita para os moradores.</p>
+            <div class="hero-eyebrow"><span class="hero-live-dot"></span> PIRACICABA · EM EXPANSÃO</div>
+            <h1><span class="hero-line">O mercado do seu dia.</span><span class="hero-line highlight">A um passo de casa.</span></h1>
+            <p>Conveniência 24 horas, reposições diárias e tecnologia própria com o cuidado de uma equipe presente. O meu, o seu, o Nosso Mercadinho.</p>
             <div class="hero-buttons">
-                <a class="btn btn-cta tooltip" href="#condominio">Quero no meu condomínio <span class="emoji">👍</span>
-                    <span class="tooltiptext">Clique para solicitar em seu condomínio</span>
-                </a>
-                <a class="btn btn-cta tooltip" href="#franquia">Seja franqueado <span class="emoji">💼</span>
-                    <span class="tooltiptext">Saiba como investir e ter seu próprio mercadinho</span>
-                </a>
+                <a class="btn btn-cta" href="#condominio">Quero no meu condomínio <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-outline" href="#simulador">Viver a experiência <span aria-hidden="true">→</span></a>
             </div>
+            <div class="hero-proof"><span><strong>24h</strong> perto de você</span><span><strong>2.000+</strong> itens no catálogo da rede</span><span><strong>Todos os dias</strong> reposição na operação própria</span></div>
         </div>
+        <span class="hero-rail" aria-hidden="true">NOSSO MERCADINHO / PIRACICABA / 24 HORAS</span>
     </header>
-    
     <div class="banner-led container">
         <p>
-            ABERTO 24 HORAS 7 DIAS POR SEMANA <span class="emoji">⏰</span> — REPOSIÇÕES DIÁRIAS <span class="emoji">🔄</span> — MAIS DE 2.000 PRODUTOS NO CATÁLOGO DA REDE <span class="emoji">🍎</span> — NOSSO MERCADINHO <span class="emoji">🛒</span> — SEJA FRANQUEADO <span class="emoji">💼</span> — TENHA NO SEU CONDOMÍNIO <span class="emoji">🏢</span> —
+            ABERTO 24 HORAS 7 DIAS POR SEMANA  — REPOSIÇÕES DIÁRIAS  — MAIS DE 2.000 PRODUTOS NO CATÁLOGO DA REDE  — NOSSO MERCADINHO  — SEJA FRANQUEADO  — TENHA NO SEU CONDOMÍNIO  —
         </p>
     </div>
     
     <section class="sobre" id="sobre">
         <div class="container">
-            <h2>Sobre o NOSSO MERCADINHO <span class="emoji">ℹ️</span></h2>
+            <h2>Sobre o NOSSO MERCADINHO </h2>
             <p>Muito mais do que um mercado autônomo, somos um ponto de conveniência que leva qualidade de vida, praticidade, segurança e conexão para os moradores.</p>
             <div class="cards">
                 <div class="card light-effect">
                     <i class="fas fa-users"></i>
-                    <h3>Conexão com a Comunidade <span class="emoji">👥</span></h3>
+                    <h3>Conexão com a Comunidade </h3>
                     <p>Um espaço acolhedor que fortalece os laços entre os moradores, com monitoramento 24h e atendimento humano via voz, com respeito total à LGPD.</p>
                 </div>
                 <div class="card light-effect">
                     <i class="fas fa-boxes"></i>
-                    <h3>Reabastecimento Inteligente <span class="emoji">🔄</span></h3>
+                    <h3>Reabastecimento Inteligente </h3>
                     <p>Mix de produtos ajustado por enquetes e preferências locais, sempre atendendo às necessidades do seu condomínio.</p>
                 </div>
                 <div class="card light-effect">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Segurança e Transparência <span class="emoji">🔒</span></h3>
+                    <h3>Segurança e Transparência </h3>
                     <p>Monitoramento, atenção à privacidade e atendimento da equipe quando necessário.</p>
                 </div>
             </div>
@@ -1471,10 +1472,10 @@
     
     <section class="midia" style="background-color:#111; padding:60px 20px;">
         <div class="container">
-            <h2 style="color:#f7931e; text-align:center;">Veja por Dentro <span class="emoji">👀</span></h2>
+            <h2 style="color:#f7931e; text-align:center;">Veja por Dentro </h2>
             <p style="text-align:center; margin-bottom:30px;">Ambiente real do NOSSO MERCADINHO</p>
             <div class="galeria" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px;">
-                <a href="foto1.jpeg" target="_blank"><img src="foto1.jpeg" style="width:100%; border-radius:10px;"/></a>
+                <a href="store-interior.webp" target="_blank" rel="noopener noreferrer"><img src="store-interior.webp" alt="Prateleiras e refrigeradores de uma unidade real do Nosso Mercadinho" loading="lazy" style="width:100%; border-radius:10px;"/></a>
                 <a href="foto2.jpeg" target="_blank"><img src="foto2.jpeg" style="width:100%; border-radius:10px;"/></a>
                 <a href="foto3.jpeg" target="_blank"><img src="foto3.jpeg" style="width:100%; border-radius:10px;"/></a>
                 <a href="foto4.jpeg" target="_blank"><img src="foto4.jpeg" style="width:100%; border-radius:10px;"/></a>
@@ -1496,16 +1497,16 @@
         <div class="container">
             <div class="destaque-content">
                 <div class="destaque-text">
-                    <h2>Como Funciona <span class="emoji">⚙️</span></h2>
+                    <h2>Como Funciona </h2>
                     <p>O NOSSO MERCADINHO é a solução perfeita para condomínios que buscam oferecer conveniência e qualidade de vida aos moradores.</p>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Sistema PEGUE e PAGUE sem complicações <span class="emoji">💳</span></li>
-                        <li><i class="fas fa-check-circle"></i> Ambiente monitorado e suporte da nossa equipe <span class="emoji">👁️</span></li>
-                        <li><i class="fas fa-check-circle"></i> Seleção de produtos ajustada à demanda de cada unidade <span class="emoji">🍎</span></li>
-                        <li><i class="fas fa-check-circle"></i> Atendimento personalizado para seu condomínio <span class="emoji">👨‍💼</span></li>
-                        <li><i class="fas fa-check-circle"></i> Sem custo de implantação na operação própria, sujeito à análise do local <span class="emoji">💰</span></li>
+                        <li><i class="fas fa-check-circle"></i> Sistema PEGUE e PAGUE sem complicações </li>
+                        <li><i class="fas fa-check-circle"></i> Ambiente monitorado e suporte da nossa equipe </li>
+                        <li><i class="fas fa-check-circle"></i> Seleção de produtos ajustada à demanda de cada unidade </li>
+                        <li><i class="fas fa-check-circle"></i> Atendimento personalizado para seu condomínio </li>
+                        <li><i class="fas fa-check-circle"></i> Sem custo de implantação na operação própria, sujeito à análise do local </li>
                     </ul>
-                    <a class="btn" href="#condominio">Saiba mais <span class="emoji">ℹ️</span></a>
+                    <a class="btn" href="#condominio">Saiba mais </a>
                 </div>
                 <div class="destaque-image float-animation">
                     <!-- Imagem será carregada aqui -->
@@ -1515,10 +1516,11 @@
     </section>
     
     <section class="technology"><div class="container tech-grid"><div><p class="new-kicker">TECNOLOGIA PRÓPRIA</p><h2>Investimos continuamente em tecnologia para cuidar dos detalhes.</h2><p>Ferramentas próprias apoiam a criação de conteúdo, a consulta operacional de produtos e o acompanhamento das unidades. A equipe usa esses dados para tomar decisões e atender melhor, sem perder o contato humano.</p><a class="btn" href="#contato">Conheça nossa operação ↗</a></div><div class="tech-visual" aria-hidden="true"><div class="tech-orbit"><span>NM</span></div><div class="tech-chip chip-a">CATÁLOGO <strong>2.000+</strong></div><div class="tech-chip chip-b">UNIDADES <strong>EM REDE</strong></div><div class="tech-chip chip-c">CRIAÇÃO <strong>CONTÍNUA</strong></div></div></div></section>
-    <section class="locations" id="unidades"><div class="container"><p class="new-kicker">ONDE ESTAMOS</p><h2>Mercadinhos que fazem parte da rotina de Piracicaba.</h2><p>Unidades identificadas no sistema operacional. Os nomes abaixo não indicam acesso público ao condomínio; consulte a equipe para informações de implantação.</p><div class="location-layout"><div class="location-list"><span>Reserva do Engenho</span><span>Monte Alegre</span><span>Provence</span><span>Damha 1</span><span>Praça das Araucárias</span><span>Aeroclube de Piracicaba</span><span>Jardins</span></div><iframe loading="lazy" title="Mapa geral de Piracicaba, sem localização exata das unidades" src="https://www.openstreetmap.org/export/embed.html?bbox=-47.75%2C-22.79%2C-47.56%2C-22.66&amp;layer=mapnik&amp;marker=-22.725%2C-47.649"></iframe></div><p class="location-note">O mapa mostra Piracicaba como referência regional; não apresenta a posição exata dos mercadinhos.</p></div></section>
+    <section class="locations" id="unidades"><div class="container"><p class="new-kicker">NOSSA PRESENÇA</p><h2>Piracicaba já vive o Nosso Mercadinho.</h2><p>Estamos em expansão. Explore no mapa os pontos cadastrados das nossas unidades; o acesso aos condomínios é reservado aos moradores.</p><div class="location-layout"><div class="location-list" id="location-list" aria-label="Unidades no mapa"></div><div class="map-wrap"><div id="locations-map" role="application" aria-label="Mapa interativo das oito unidades em Piracicaba"></div><div class="map-caption"><span class="map-caption-dot"></span> 8 pontos cadastrados na VM · toque em uma unidade</div></div></div><p class="location-note">Os pontos representam as coordenadas dos locais cadastrados na VM. A posição do mercadinho dentro de cada condomínio pode ser diferente.</p></div></section>
+    <section class="expansion-banner"><div class="container expansion-content"><div><span class="new-kicker">PIRACICABA EM MOVIMENTO</span><h2>Estamos construindo os próximos capítulos.</h2><p>Novas implantações e melhorias na operação fazem parte do nosso dia a dia. Para seu condomínio, avaliamos o espaço e o projeto com atenção.</p></div><a class="btn" href="#contato">Conversar com nossa equipe ↗</a></div></section>
     <section class="simulador" id="simulador">
         <div class="container">
-            <h2>Entre no Nosso Mercadinho virtual <span class="emoji">🛒</span></h2>
+            <h2>Entre no Nosso Mercadinho virtual </h2>
             <p>Explore uma compra demonstrativa com produtos do catálogo integrado, caixa interativo e novidades da nossa equipe na TV do mercadinho. A experiência não mostra preços nem realiza pagamentos.</p>
             <div class="simulador-embed">
                 <iframe loading="lazy" src="simulador/" title="Simulador de Compras NOSSO MERCADINHO"></iframe>
@@ -1529,40 +1531,40 @@
     
     <section class="condominios" id="condominio">
         <div class="container">
-            <h2>Para Condomínios <span class="emoji">🏢</span></h2>
+            <h2>Para Condomínios </h2>
             <p>Ofereça praticidade e conveniência aos moradores sem custo de implantação para o condomínio ou moradores, na operação própria. Na operação própria, cuidamos da rotina e não fazemos repasse ao condomínio para priorizar preços acessíveis. Cada morador paga apenas suas compras:</p>
             <div class="beneficios-list">
                 <div class="beneficio-item light-effect">
                     <i class="fas fa-bolt"></i>
                     <div>
-                        <h4>Instalação Rápida <span class="emoji">⚡</span></h4>
+                        <h4>Instalação Rápida </h4>
                         <p>Equipamentos modernos instalados rapidamente após aprovação.</p>
                     </div>
                 </div>
                 <div class="beneficio-item light-effect">
                     <i class="fas fa-shield-alt"></i>
                     <div>
-                        <h4>Segurança 24h <span class="emoji">🔒</span></h4>
+                        <h4>Segurança 24h </h4>
                         <p>Sistema de monitoramento integrado com câmeras de segurança e atendimento humano via voz no local.</p>
                     </div>
                 </div>
                 <div class="beneficio-item light-effect">
                     <i class="fas fa-sync-alt"></i>
                     <div>
-                        <h4>Reposição Inteligente <span class="emoji">🔄</span></h4>
+                        <h4>Reposição Inteligente </h4>
                         <p>Reposições diárias na operação própria, conforme demanda e preferências locais.</p>
                     </div>
                 </div>
                 <div class="beneficio-item light-effect">
                     <i class="fas fa-chart-line"></i>
                     <div>
-                        <h4>Relatórios Mensais <span class="emoji">📊</span></h4>
+                        <h4>Relatórios Mensais </h4>
                         <p>Transparência total com relatórios de satisfação.</p>
                     </div>
                 </div>
             </div>
             <div style="text-align: center;">
-                <button class="btn btn-cta" onclick="abrirModal('modalCondominio')">Quero no meu condomínio <span class="emoji">👍</span></button>
+                <button class="btn btn-cta" onclick="abrirModal('modalCondominio')">Quero no meu condomínio </button>
             </div>
             <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: var(--laranja);">
                 <strong>Para sua avaliação:</strong> acima de 200 residências, estudamos operação própria; por volta de 150, também podemos conversar. Para cerca de 100, avaliamos franquia. Abaixo de 100, não implantamos atualmente.
@@ -1576,7 +1578,7 @@
     
     <section class="contato" id="contato">
         <div class="container">
-            <h2>Entre em Contato <span class="emoji">📞</span></h2>
+            <h2>Entre em Contato </h2>
             <p>Tem dúvidas ou quer saber mais sobre nossas soluções? Fale conosco!</p>
             <div class="contato-container">
                 <div class="contato-info">
@@ -1648,7 +1650,7 @@
                             <label for="mensagem">Mensagem</label>
                             <textarea id="mensagem" name="mensagem" required=""></textarea>
                         </div>
-                        <button class="btn" type="submit">Enviar Mensagem <span class="emoji">✉️</span></button>
+                        <button class="btn" type="submit">Enviar Mensagem </button>
                     </form>
                 </div>
             </div>
@@ -1656,7 +1658,7 @@
     </section>
     
     <section id="faq" style="background-color: var(--cinza-claro); padding: 60px 20px;">
-        <h2 style="text-align: center; width: 100%; color: var(--preto);">Perguntas Frequentes <span class="emoji">❓</span></h2>
+        <h2 style="text-align: center; width: 100%; color: var(--preto);">Perguntas Frequentes </h2>
         <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1000px; margin: 40px auto;">
             <div style="flex: 1 1 45%; min-width: 300px;">
                 <details class="faq-item" style="margin-bottom: 15px; background-color: var(--branco); padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
@@ -1782,7 +1784,7 @@
     <div class="modal" id="modalCondominio">
         <div class="modal-content">
             <button class="close-btn" onclick="fecharModal('modalCondominio')">×</button>
-            <h3>Quero no meu condomínio <span class="emoji">🏢</span></h3>
+            <h3>Quero no meu condomínio </h3>
             <form id="formCondominio">
                 <input name="nome" placeholder="Seu Nome Completo *" required="" type="text"/>
                 <select name="feitoPor" required="">
@@ -1799,7 +1801,7 @@
                 <p style="font-size: 0.9rem; color: var(--laranja); margin-top: 0.5em;">
                     Atendemos somente Piracicaba no momento.
                 </p>
-                <button class="btn" type="submit">Enviar Interesse <span class="emoji">✉️</span></button>
+                <button class="btn" type="submit">Enviar Interesse </button>
             </form>
         </div>
     </div>
@@ -1807,7 +1809,7 @@
     <div class="modal" id="modalFranqueado">
         <div class="modal-content">
             <button class="close-btn" onclick="fecharModal('modalFranqueado')">×</button>
-            <h3>Seja Franqueado <span class="emoji">💼</span></h3>
+            <h3>Seja Franqueado </h3>
             <form id="formFranqueado">
                 <input name="nome" placeholder="Seu Nome Completo *" required="" type="text"/>
                 <input name="profissao" placeholder="Sua Profissão / Ramo de Atuação *" required="" type="text"/>
@@ -1819,7 +1821,7 @@
                 </select>
                 <textarea name="motivo" placeholder="Por que deseja abrir uma franquia? *" required="" rows="4"></textarea>
                 <input name="email" placeholder="Seu E-mail para Retorno (opcional)" type="text"/>
-                <button class="btn" type="submit">Enviar Interesse <span class="emoji">✉️</span></button>
+                <button class="btn" type="submit">Enviar Interesse </button>
             </form>
         </div>
     </div>
@@ -1840,7 +1842,7 @@
     
     <!-- Notificação interna -->
     <div class="internal-notification" id="internalNotification">
-        Já pensou ter um mercadinho como esse no seu condomínio? <span class="emoji">🤔</span>
+        Já pensou ter um mercadinho como esse no seu condomínio?
     </div>
 
 
@@ -2187,5 +2189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <canvas id="confetti-canvas" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:100000;"></canvas>
 <script src="experience.js" defer></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script src="locations.js" defer></script>
 </body>
 </html>

@@ -16,13 +16,16 @@
     el.dataset.animated = '1';
     const goal = Number(el.dataset.count), suffix = el.dataset.suffix || '';
     if (reduced) {el.textContent = goal.toLocaleString('pt-BR') + suffix; return;}
-    const start = performance.now(), duration = 1450;
-    const tick = now => {
-      const p = Math.min(1, (now-start)/duration), eased = 1-Math.pow(1-p, 4);
-      el.textContent = Math.round(goal*eased).toLocaleString('pt-BR') + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
+    el.setAttribute('aria-label',goal.toLocaleString('pt-BR')+suffix);
+    el.replaceChildren();
+    for (const char of goal.toLocaleString('pt-BR')) {
+      if (!/\d/.test(char)) {const separator=document.createElement('span');separator.className='odo-sep';separator.textContent=char;el.append(separator);continue;}
+      const window=document.createElement('span'),roll=document.createElement('span');window.className='odo-window';roll.className='odo-roll';roll.setAttribute('aria-hidden','true');
+      for(let cycle=0;cycle<3;cycle++)for(let digit=0;digit<10;digit++){const cell=document.createElement('span');cell.textContent=String(digit);roll.append(cell);}
+      window.append(roll);el.append(window);
+      requestAnimationFrame(()=>{roll.style.transition='transform 1.5s cubic-bezier(.18,.82,.2,1)';roll.style.transform=`translateY(-${20+Number(char)}em)`;});
+    }
+    if(suffix){const suffixNode=document.createElement('span');suffixNode.className='odo-sep';suffixNode.textContent=suffix;el.append(suffixNode);}
   }
   if (!('IntersectionObserver' in window)) counters.forEach(animateCounter);
   else {
